@@ -1,0 +1,30 @@
+#+TITLE: [Esami] Informatica @ DSS 2019/2020 - 2o canale
+
+* Modalità di esame
+
+  Le  date degli  appelli sono  ancora da  decidere. 
+
+  Le   modalità  di   esame  saranno   precisate  durante   il  corso.
+  Quanto  scritto  qui  è  indicativo  di quello  che  è  stato  fatto
+  l'anno scorso.
+
+  - prova scritta in aula
+  - esercizio di programmazione
+  - esame orale.
+
+  *Non ci sono esoneri*
+
+  L'esame  orale  sarà  principalmente  una  discussione  della  prova
+  scritta  con qualche  domanda integrativa,  più la  correzione degli
+  esercizi di programmazione.
+  
+  Lo  studente  dovrà  portare,   per  accedere  all'esame  orale,  un
+  esercizio di  programmazione Python/SQL  che sarà testato  con degli
+  input  segreti. Per  facilitare lo  svolgimento dell'esercizio  sono
+  inclusi dei test  preliminari per verificare che  le soluzioni siano
+  ben impostate.
+
+
+  - Testo dell'esercizio: da definire
+  - Test preliminari: da definire
+  

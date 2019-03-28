@@ -1,0 +1,107 @@
+#+TITLE: Informatica @ DSS 2019/2020 - 2o canale
+
+#
+# Force the  link to the  homepage to  be highlighted, to  work around
+# a bug in the manu highlight code
+#
+#+begin_export html
+<script type="text/javascript"> highlightHomeLink()</script>
+#+end_export
+ 
+#+begin_export html
+<a href="http://massimolauria.net">
+<img src="images/mlauria_pic.png" id="profile-pic" />
+</a>
+#+end_export
+
+* Massimo Lauria 
+  
+#+begin_export html
+<div>
+<ul id="contacts-list">
+    <li class="contacts">
+    <img src="images/email.png" class="contact-pic" />
+    <a href="mailto:massimo.lauria@uniroma1.it">massimo.lauria@uniroma1.it</a></li>
+    <li class="contacts">
+    <img src="images/phone.png" class="contact-pic" />
+    +39-06-49910496 </li>
+    <li class="contacts">
+    <img src="images/office.png" class="contact-pic" />
+    Stanza n.9 - 4<sup>o</sup> piano - Dipartimento di Science Statistiche (CU002)</li>
+    <li class="contacts">
+    <img src="images/talk.png" class="contact-pic" />
+    Ricevimento: Lunedì  15.00-17.00</li>
+</ul>
+</div>
+#+end_export
+
+ 
+ 
+* Descrizione del corso
+
+  Questo corso è stato progettato per dare agli studenti delle nozioni
+  rudimentali di  informatica. Ci sarà  una minima parte  di contenuti
+  teorici  e   una  più   sostanziale  parte  di   contenuti  tecnici.
+  Gli studenti dovranno  imparare a ragionare in maniera  logica e non
+  ambigua,  in  maniera  tale  da  risolvere  problemi  computazionali
+  scrivendo dei  programmi in linguaggio [[https://www.python.org/][Python]].
+
+* Testi e risorse consigliate
+  
+  - ([[http://pellacini.di.uniroma1.it/books/fondamentibook16/fondamentibook16.html][ebook]]) *Fondamenti   di  Programmazione   in  Python* di   /F.
+    Pellacini/. [Circa 10 euro]
+
+  Sia  i  concetti  che  le   tecnologie  presentate  nel  corso  sono
+  consolidate.  Esistono  numerosissimi corsi,  videocorsi,  tutorial,
+  manuali che trattano  l'informatica di base e Python.  Molti di sono
+  gratuiti  e di  alta qualità,  e possono  essere trovati  facilmente
+  usando  qualunque motore  di ricerca.  Purtroppo quasi  tutto questo
+  materiale è in inglese.
+  
+* Calendario, Orari e Aule
+
+  Il calendario  delle lezioni è  ancora da definire. Se  dovessi aver
+  bisogno di spostare  o rimandare qualche lezione,  ve lo comunicherò
+  per tempo.
+
+* Lezioni regolari (Edificio CU035, aula 15).
+
+#+begin_export html
+<a href="https://www.google.it/maps/place/41%C2%B054'03.9%22N+12%C2%B030'48.2%22E/@41.9010922,12.5127169,18z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d41.9010907!4d12.5133782">
+<img src="images/map_CU035_Aula15.png" id="location-pic" />
+</a>
+#+end_export
+
+  Le lezioni regolari si  svolgeranno nell'Aula 15 dell'edificio CU035,
+  che si trova all'interno della città universitaria.
+
+  - Mercoledì, ore 15.00-17.00 (Aula 15, nuovo polo didattico CU035)
+  - Venerdì,   ore 12.30-14.30 (Aula 15, nuovo polo didattico CU035)
+
+#+begin_export html
+<div style="width:50px;height:100px">
+    <br/>
+</div>
+#+end_export
+
+
+* Laboratorio (Via Tiburtina 205, aula 15)
+
+#+begin_export html
+<a href="https://www.google.it/maps/place/Laboratori+di+Informatica+%E2%80%9CPaolo+Ercoli%E2%80%9D+-+Sapienza+Universit%C3%A0+di+Roma/@41.899657,12.5154458,17z/data=!4m13!1m7!3m6!1s0x132f619c98f5f547:0xfc8c7c61ff5bcdf1!2sVia+Tiburtina,+205,+00185+Roma+RM!3b1!8m2!3d41.8997786!4d12.5169319!3m4!1s0x132f619c98f5f547:0x208992da9a66bf3!8m2!3d41.8998233!4d12.5167901">
+<img src="images/map_RM025_Aula15.png" id="location-pic" />
+</a>
+#+end_export
+
+  Le lezioni  di laboratorio si  svolgono nell'aula dei  laboratori di
+  Via  Tiburtina, 205.  Le aule  sono dotate  di computer  con sistema
+  operativo  Linux.  Durante  queste  lezioni  gli  studenti  dovranno
+  scrivere piccoli programmi in Python.
+
+  - Lunedì, ore 8.00-10.00
+  
+#+begin_export html
+<div style="width:50px;height:50px">
+    <br/>
+</div>
+#+end_export

@@ -1,0 +1,11 @@
+#+TITLE: Informatica @ DSS 2019/2020
+
+This is the  source code for the webpage of  the course of Informatica
+(year 2019/2020) for the second trunk of students at the [[http://www.dss.uniroma1.it][Department  of Statistical
+Sciences]] , currently published at
+
+http://www.massimolauria.net/courses/informatica2019/
+
+The idea  is that the site  is a bunch of  =org-mode= files, converted
+into  a proper  webpage with  some  =org-publish= magic.  The site  is
+uploaded using =rsync=.

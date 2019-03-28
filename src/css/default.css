@@ -1,0 +1,263 @@
+/** -------- Main --------- **/
+
+html {
+    border:  0;
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+/** Links ---- **/
+a { color: #822433;
+    text-decoration: none; }
+
+main a { font-weight: bold; }
+main a:hover { text-decoration: underline; }
+
+div#postamble a { font-weight: bold; }
+div#postamble a:hover {  text-decoration: underline; }
+
+/** -------- Navigator --------- 
+   
+   When then width of the page becomes too small, the navigators
+   shrinks to a vertical layout.
+*/
+
+div#preamble{
+    background-color: #f1f1f1;
+}
+
+header {
+    margin: auto;
+    max-width:800px;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+nav {
+    overflow: hidden;
+}
+nav .current {
+    background-color: #822433;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+nav .right {float: right;}
+nav .left  {float: left;}
+
+nav li a {
+    display: block;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+ 
+nav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}    
+
+nav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    nav .right,
+    nav .left {float: none;}
+    nav li a {padding: 8px 10px;}
+ }
+
+/** ------ Content --------- **/
+
+main {
+    margin: auto;
+    max-width:800px;
+    padding-left:10%;
+    padding-right:10%;
+    text-align: justify;
+    hyphens: auto;
+}
+
+@media screen and (max-width: 600px){
+    main { font-size: 90%;}
+}
+
+article {}
+
+article h2 {text-align:left;}
+
+
+div#footnotes {}
+
+
+/** ------ Footer --------- **/
+div#postamble {
+    margin: auto;
+    max-width:800px;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+footer {
+    border-top: 1px solid #000;
+    margin-top: 2%;
+    padding: 1%;
+    font-size:70%;
+    text-align: center
+}
+
+
+/** BIBLIOGRAPHY STUFF **/
+
+.bibentry {
+    margin-bottom: 1em;
+}
+
+.biblinks {
+    border:0;
+    width:12%;
+}
+
+.biblinks img {
+    border:0;
+    max-width:40px;
+}
+
+.bibinfo {  }
+
+.bibtitle {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.bibid {
+    font-weight: bold;
+}
+
+
+/*---------------------  Math -------------------------*/
+.abstract {
+    display: none; /* Abstract box are hidden by default. */
+
+    margin-top:    1ex;
+    margin-bottom: 1ex;
+    margin-left:   2em;
+    margin-right:  2em;
+
+    padding-top:    2ex;
+    padding-bottom: 2ex;
+    padding-left:   2em;
+    padding-right:  2em;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    background: #eee;
+
+    text-align: justify;
+    font-family: serif;
+
+}
+
+.abstract-header {
+    font-size: 120%;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+    margin-top:    1ex;
+    margin-bottom: 1ex;
+
+}
+
+.abstract-button {
+    font-size: 80%;
+    color: white;
+    
+    text-align: center;
+    margin-top:    2ex;
+    margin-bottom: 1ex;
+
+    border: 0px;
+    width: 10em;
+    padding: 2px;
+    
+    background-color: #822433;
+
+    border-radius: 	    2em;
+}
+
+
+/* Landing page */
+img#profile-pic {
+    width: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 0;
+    margin-right: 2em;
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+
+
+#contacts-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contacts {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-pic {
+    vertical-align: middle;
+    width: 2em;
+}
+
+#news {
+    margin-top: 10%;
+    clear:both;
+}
+
+img#location-pic {
+    width: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 0;
+    margin-right: 2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    overflow: auto;
+}
+
+#snailmail {
+    clear:right;
+}
+
+@media screen and (max-width: 600px){
+    img#profile-pic  {float: none;} 
+    img#location-pic {float: none;}
+}
+
+
+/* org elements */
+.timestamp { color: #822433; }
+
+
