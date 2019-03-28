@@ -4,7 +4,7 @@
     <ul id="nav">
       <li class="left" style="font-variant: small-caps">
         <a id="homelink" href="index.html">
-          Informatica@SEFA 2018/2019
+          Informatica@DSS 2019/2020 (2o canale)
           </a>
       </li>
       <div class="right">
