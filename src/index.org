@@ -27,7 +27,7 @@
     +39-06-49910496 </li>
     <li class="contacts">
     <img src="images/office.png" class="contact-pic" />
-    Stanza n.9 - 4<sup>o</sup> piano - Dipartimento di Science Statistiche (CU002)</li>
+    Stanza 9 - 4<sup>o</sup> piano - Dip.Science Statistiche</li>
     <li class="contacts">
     <img src="images/talk.png" class="contact-pic" />
     Ricevimento: Lunedì  15.00-17.00</li>
@@ -46,10 +46,9 @@
   ambigua,  in  maniera  tale  da  risolvere  problemi  computazionali
   scrivendo dei  programmi in linguaggio [[https://www.python.org/][Python]].
 
-* Testi e risorse consigliate
+* TODO Testi e risorse consigliate
+
   
-  - ([[http://pellacini.di.uniroma1.it/books/fondamentibook16/fondamentibook16.html][ebook]]) *Fondamenti   di  Programmazione   in  Python* di   /F.
-    Pellacini/. [Circa 10 euro]
 
   Sia  i  concetti  che  le   tecnologie  presentate  nel  corso  sono
   consolidate.  Esistono  numerosissimi corsi,  videocorsi,  tutorial,
@@ -60,23 +59,24 @@
   
 * Calendario, Orari e Aule
 
-  Il calendario  delle lezioni è  ancora da definire. Se  dovessi aver
-  bisogno di spostare  o rimandare qualche lezione,  ve lo comunicherò
-  per tempo.
+  Il corso si svolge dal 23  Settembre al 19 Dicembre 2019, secondo un
+  calendario settimanale  che trovate  [[https://calendar.google.com/calendar/embed?src=ul77ti1tiirukf44podk0l1ub0%2540group.calendar.google.com&ctz=Europe/Madrid][su Google Calendar]].  Se dovessi
+  aver  bisogno  di  spostare  o  rimandare  qualche  lezione,  ve  lo
+  comunicherò  per tempo. 
 
-* Lezioni regolari (Edificio CU035, aula 15).
+* Lezioni regolari (Dip. Scienze Statistiche, Aula III).
 
 #+begin_export html
-<a href="https://www.google.it/maps/place/41%C2%B054'03.9%22N+12%C2%B030'48.2%22E/@41.9010922,12.5127169,18z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d41.9010907!4d12.5133782">
-<img src="images/map_CU035_Aula15.png" id="location-pic" />
+<a href="https://www.google.com/maps/place/Dipartimento+di+Scienze+Statistiche,+Piazzale+Aldo+Moro,+5,+00185+Roma+RM/@41.904548,12.5146987,15z/data=!4m2!3m1!1s0x132f619d82387a1b:0x4a99cb199c292eb5">
+<img src="images/map_CU002_AulaIII.png" id="location-pic" />
 </a>
 #+end_export
 
-  Le lezioni regolari si  svolgeranno nell'Aula 15 dell'edificio CU035,
-  che si trova all'interno della città universitaria.
+  Le lezioni regolari si svolgeranno  nell'Aula III al terzo piano del
+  Dipartimento di Scienze Statistiche (CU002).
 
-  - Mercoledì, ore 15.00-17.00 (Aula 15, nuovo polo didattico CU035)
-  - Venerdì,   ore 12.30-14.30 (Aula 15, nuovo polo didattico CU035)
+  - Mercoledì, ore 12.00-14.00
+  - Venerdì,   ore 14.00-16.00
 
 #+begin_export html
 <div style="width:50px;height:100px">
@@ -96,7 +96,7 @@
   Le lezioni  di laboratorio si  svolgono nell'aula dei  laboratori di
   Via  Tiburtina, 205.  Le aule  sono dotate  di computer  con sistema
   operativo  Linux.  Durante  queste  lezioni  gli  studenti  dovranno
-  scrivere piccoli programmi in Python.
+  scrivere programmi in Python.
 
   - Lunedì, ore 8.00-10.00
   

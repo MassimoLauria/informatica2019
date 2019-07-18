@@ -1,6 +1,6 @@
 #+TITLE: [Esami] Informatica @ DSS 2019/2020 - 2o canale
 
-* Modalità di esame
+* TODO Modalità di esame
 
   Le  date degli  appelli sono  ancora da  decidere. 
 
@@ -19,9 +19,9 @@
   esercizi di programmazione.
   
   Lo  studente  dovrà  portare,   per  accedere  all'esame  orale,  un
-  esercizio di  programmazione Python/SQL  che sarà testato  con degli
-  input  segreti. Per  facilitare lo  svolgimento dell'esercizio  sono
-  inclusi dei test  preliminari per verificare che  le soluzioni siano
+  esercizio di programmazione Python che  sarà testato con degli input
+  segreti. Per  facilitare lo svolgimento dell'esercizio  sono inclusi
+  dei  test   preliminari  per  verificare  che   le  soluzioni  siano
   ben impostate.
 
 
