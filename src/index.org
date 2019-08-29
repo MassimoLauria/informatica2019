@@ -46,17 +46,49 @@
   ambigua,  in  maniera  tale  da  risolvere  problemi  computazionali
   scrivendo dei  programmi in linguaggio [[https://www.python.org/][Python]].
 
-* TODO Testi e risorse consigliate
+* Libro di testo e risorse didattiche
 
+  Il libro di testo che adottiamo  è /Pensare in Python - Come pensare
+  da  Informatico/  di  Allen  B.   Downey.  Il  libro  è  disponibile
+  gratuitamente in versione italiana.
   
+  - [[https://github.com/AllenDowney/ThinkPythonItalian/blob/master/thinkpython_italian.pdf][Pensare in Python - Come Pensare da Informatico]] di Allen B. Downey
 
+  In più  per la parte  teorica legata  ad algoritmi e  complessità ci
+  sono delle dispense che verranno rese  disponibili a mano a mano che
+  si procede nel corso. Gran parte di questo materiale deriva un libro
+  di testo  che non è  necessario per il corso  (visto che ci  sono le
+  dispense) ma al quale può essere utile riferirsi per approfondimenti
+  o chiarimenti.
+
+  - /Introduzione  agli  algoritmi  e  strutture dati/  di  Thomas  H.
+    Cormen, Charles E. Leiserson, e al.
+
+  Durente  le lezioni  verranno  prodotte dispense  e diapositive  che
+  verranno rese disponibili sulla pagina del [[file:journal.org][diario del corso]].
+
+  /Ulteriori risorse/
+  
   Sia  i  concetti  che  le   tecnologie  presentate  nel  corso  sono
   consolidate.  Esistono  numerosissimi corsi,  videocorsi,  tutorial,
-  manuali che trattano  l'informatica di base e Python.  Molti di sono
+  manuali che  trattano l'informatica di  base, Python. Molti  di sono
   gratuiti  e di  alta qualità,  e possono  essere trovati  facilmente
-  usando  qualunque motore  di ricerca.  Purtroppo quasi  tutto questo
-  materiale è in inglese.
-  
+  usando  qualunque motore  di  ricerca. La  maggior  parte di  questo
+  materiale  è  in  inglese,  anche se  dovrebbe  essercene  parecchio
+  in italiano.
+
+** Programma di esame
+
+   Riassumendo, il programma di esame è costituito da
+   
+   - Capitoli  del  libero  di  testo /Pensare  in  Python/,  elencati
+     durante il corso
+   - Dispense sulla parte teorica di algoritmi e complessità
+   - Il contenuto delle diapositive utilizzate a lezione
+   - Il contenuto delle esercitazioni di laboratorio
+     
+   Le modalità di esame sono discusse nella [[file:esami.org][pagina dedicata]].
+       
 * Calendario, Orari e Aule
 
   Il corso si svolge dal 23  Settembre al 19 Dicembre 2019, secondo un
