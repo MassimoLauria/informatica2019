@@ -9,6 +9,7 @@
       </li>
       <div class="right">
         <li class="left"> <a href="journal.html">Lezioni</a></li>
+        <li class="left"> <a href="risorse.html">Materiale</a></li>
         <li class="left"> <a href="esami.html">Esame</a></li>
       </div>
     </ul>

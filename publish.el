@@ -44,7 +44,6 @@
     (insert-file-contents (concat base-directory filename))
     (buffer-string)))
 
-
 (setq org-publish-project-alist
       `(
 

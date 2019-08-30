@@ -265,3 +265,25 @@ img#location-pic {
 .timestamp { color: #822433; }
 
 
+/* org tables */
+table {
+    border: solid 1px #AAA;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table thead th {
+    background-color: #822433;
+    border: solid 0px #000;
+    color: #fff;
+    padding: 10px 5px 10px 5px;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+  background: #FDD;
+}
+
+table tbody td {
+    border: solid 1px #AAA;
+    padding: 10px 5px 10px 5px;
+}

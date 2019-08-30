@@ -36,6 +36,10 @@
 #+end_export
 
  
+
+* Avvisi
+
+  Nessun avviso, per ora.
  
 * Descrizione del corso
 
@@ -52,7 +56,7 @@
   da  Informatico/  di  Allen  B.   Downey.  Il  libro  è  disponibile
   gratuitamente in versione italiana.
   
-  - [[https://github.com/AllenDowney/ThinkPythonItalian/blob/master/thinkpython_italian.pdf][Pensare in Python - Come Pensare da Informatico]] di Allen B. Downey
+  - [[file:docs/PensareInPython.pdf][Pensare in Python - Come Pensare da Informatico]] di Allen B. Downey
 
   In più  per la parte  teorica legata  ad algoritmi e  complessità ci
   sono delle dispense che verranno rese  disponibili a mano a mano che
@@ -108,7 +112,7 @@
   Dipartimento di Scienze Statistiche (CU002).
 
   - Mercoledì, ore 12.00-14.00
-  - Venerdì,   ore 14.00-16.00
+  - Giovedì,   ore 14.00-16.00
 
 #+begin_export html
 <div style="width:50px;height:100px">
