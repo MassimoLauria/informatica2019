@@ -1,0 +1,21 @@
+#+TITLE: [Risorse didattiche] Informatica @ DSS 2019/2020 - 2o canale
+
+In questa pagina  teniamo un indice del materiale  didattico, man mano
+che viene prodotto e pubblicato.
+
+* Libro di testo  
+
+  - [[file:docs/PensareInPython.pdf][Pensare in Python - Come Pensare da Informatico]] di Allen B. Downey
+
+* Diapositive 
+
+  Le  diapositive, per  argomento,  utilizzate a  lezione. Sul  [[file:journal.org][diario]]
+  potete   trovare  indicate   quali  slide   sono  state   usate  per
+  ogni lezioni.
+
+  |--------------------+----------------------------+----------------------------|
+  | Contenuto          | PDF per lo schermo (scuro) | PDF per la stampa (chiaro) |
+  |--------------------+----------------------------+----------------------------|
+  | Apertura del corso | [[file:docs/opening-slides.pdf][scarica]]                    | [[file:docs/opening-print.pdf][scarica]]                    |
+  | Tutorial lab.      | [[file:docs/tutorial_lab-slides.pdf][scarica]]                    | [[file:docs/tutorial_lab-print.pdf][scarica]]                    |
+  |--------------------+----------------------------+----------------------------|
