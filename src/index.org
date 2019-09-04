@@ -1,4 +1,4 @@
-#+TITLE: Informatica @ DSS 2019/2020 - 2o canale
+#+TITLE: Informatica @ DSS 2019/2020 - II
 
 #
 # Force the  link to the  homepage to  be highlighted, to  work around
