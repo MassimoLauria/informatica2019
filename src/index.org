@@ -85,8 +85,8 @@
 
    Riassumendo, il programma di esame è costituito da
    
-   - Capitoli  del  libero  di  testo /Pensare  in  Python/,  elencati
-     durante il corso
+   - Capitoli del libro di testo /Pensare in Python/, elencati durante
+     il corso
    - Dispense sulla parte teorica di algoritmi e complessità
    - Il contenuto delle diapositive utilizzate a lezione
    - Il contenuto delle esercitazioni di laboratorio

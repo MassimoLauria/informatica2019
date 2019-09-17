@@ -10,9 +10,11 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   linux  del  laboratorio: come  trovare  i  programmi necessari  allo
   svolgimento delle esercitazioni e come utilizzare il terminale.
    
+  *Materiale didattico*
 
   Introduzione: ([[file:docs/opening-slides.pdf][schermo]]|[[file:docs/opening-print.pdf][stampa]])
   
   Tutorial al laboratorio: ([[file:docs/tutorial_lab-slides.pdf][schermo]]|[[file:docs/tutorial_lab-print.pdf][stampa]])
 
+  *Lavoro assegnato:* leggere il capitolo 1 del libro di testo.
 
