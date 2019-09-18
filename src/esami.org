@@ -1,28 +1,65 @@
 #+TITLE: [Esami] Informatica @ DSS 2019/2020 - II
 
-* Modalità di esame
+/Avvertenza! Tutte le informazioni  in questa pagina possono cambiare
+per esigenze organizzative, e di sincronizzazione tra i tre canali./
 
-  Le date degli appelli sono ancora da decidere, così come le modalità
-  di esame,  che saranno diverse  rispetto all'anno scorso.  Di sicuro
-  l'esame sarà costituito da 
+* Modalità e date degli appelli 
+
+  L'esame sarà costituito da due prove, 
 
   - prova scritta 
   - esercizi di programmazione
 
-  *Non ci saranno esoneri*
+  e per  completare l'esame  sarà necessario  ottenere in  entrambe un
+  voto non  inferiore a 18. Il  voto finale dell'esame sarà  una media
+  pesata del voto delle due prove. Non ci saranno esoneri.
 
-* COMMENT 
-  L'esame  orale  sarà  principalmente  una  discussione  della  prova
-  scritta  con qualche  domanda integrativa,  più la  correzione degli
-  esercizi di programmazione.
+  #+BEGIN_CENTER
+  |---------+-----------+---------------+------------+------------------------|
+  | Appello | Data      | Aula          |     Orario | Risultati              |
+  |---------+-----------+---------------+------------+------------------------|
+  | I       | 13/1/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | II      | 10/2/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | III     | 1/6/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | IV      | 6/7/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | V       | 7/9/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  |---------+-----------+---------------+------------+------------------------|
+  #+END_CENTER
   
-  Lo  studente  dovrà  portare,   per  accedere  all'esame  orale,  un
-  esercizio di programmazione Python che  sarà testato con degli input
-  segreti. Per  facilitare lo svolgimento dell'esercizio  sono inclusi
-  dei  test   preliminari  per  verificare  che   le  soluzioni  siano
-  ben impostate.
+  In ogni  data verranno svolte  entrambe le prove, secondo  un orario
+  che va ancora finalizzato. Ad esempio:
 
+  - prova scritta: dalle ore 9.00 alle 11.00
+  - prova di programmazione: dalle ore 11.30 alle ore 13.30
 
-  - Testo dell'esercizio: da definire
-  - Test preliminari: da definire
-  
+  E sarà possibile presentarsi per una sola delle due prove.
+
+** Note  ulteriori
+
+   Non è necessario  fare la prova scritta nello  stesso appello della
+   prova di  programmazione. Ognuna  delle due prove  viene conservata
+   *fino  all'appello  di  Settembre,   incluso*.  Quindi  ad  esempio
+   è  possibile consegnare  lo scritto  nell'appello di  Gennaio e  la
+   prova di programmazione in quello  di Luglio, e quindi verbalizzare
+   il voto a Luglio.
+
+   Se  si  consegna più  di  una  volta  una  delle due  prove,  viene
+   mantenuto solo  il voto  più recente,  anche se  è più  basso delle
+   prove precedenti.
+
+* Appelli straordinari
+
+  A Marzo e  a Ottobre si svolgeranno gli  appelli straordinari aperte
+  solo a specifiche categorie di studenti, ovvero
+
+  - studenti part-time,
+  - studenti con disabilità e con D.S.A.,
+  - studenti fuori corso, 
+  - (*solo per l'appello di ottobre*) iscritti per l'A.A. 2019-2020 al
+    terzo anno della laurea o al secondo anno della laurea magistrale.
+
+  L'organizzazione di questi  appelli verrà decisa di  volta in volta,
+  a  seconda del  numero  di iscritti.  Ad esempio  se  ci sono  pochi
+  iscritti è possibile  che l'esame sia una prova orale  svolta in una
+  giornata decisa collegialmente insieme agli studenti stessi.
+
