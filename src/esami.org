@@ -1,4 +1,4 @@
-#+TITLE: [Esami] Informatica @ DSS 2019/2020 - II
+#+TITLE: [Esami] Informatica @ DSS 2019/2020 - (E-N)
 
 /Avvertenza! Tutte le informazioni  in questa pagina possono cambiare
 per esigenze organizzative, e di sincronizzazione tra i tre canali./
@@ -18,9 +18,9 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   |---------+-----------+---------------+------------+------------------------|
   | Appello | Data      | Aula          |     Orario | Risultati              |
   |---------+-----------+---------------+------------+------------------------|
-  | I       | 13/1/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | I       | 17/1/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   | II      | 10/2/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
-  | III     | 1/6/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | III     | 3/6/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   | IV      | 6/7/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   | V       | 7/9/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   |---------+-----------+---------------+------------+------------------------|

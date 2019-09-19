@@ -4,7 +4,7 @@
     <ul id="nav">
       <li class="left" style="font-variant: small-caps">
         <a id="homelink" href="index.html">
-          Informatica@DSS 2019/2020 - II
+          Informatica@DSS 2019/2020   (E-N)
           </a>
       </li>
       <div class="right">

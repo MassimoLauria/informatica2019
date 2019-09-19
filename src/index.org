@@ -1,4 +1,4 @@
-#+TITLE: Informatica @ DSS 2019/2020 - II
+#+TITLE: Informatica @ DSS 2019/2020 - (E-N)
 
 #
 # Force the  link to the  homepage to  be highlighted, to  work around
