@@ -13,10 +13,11 @@ che viene prodotto e pubblicato.
   potete   trovare  indicate   quali  slide   sono  state   usate  per
   ogni lezioni.
 
-  |------------------------+----------------------------+----------------------------|
-  | Contenuto              | PDF per lo schermo (scuro) | PDF per la stampa (chiaro) |
-  |------------------------+----------------------------+----------------------------|
-  | Introduzione del corso | [[file:docs/opening-slides.pdf][scarica]]                    | [[file:docs/opening-print.pdf][scarica]]                    |
-  | Tutorial lab.          | [[file:docs/tutorial_lab-slides.pdf][scarica]]                    | [[file:docs/tutorial_lab-print.pdf][scarica]]                    |
-  | Ambienti Python        | [[file:docs/usarepython-slides.pdf][scarica]]                    | [[file:docs/usarepython-print.pdf][scarica]]                    |
-  |------------------------+----------------------------+----------------------------|
+  |-------------------------+----------------------------+----------------------------|
+  | Contenuto               | PDF per lo schermo (scuro) | PDF per la stampa (chiaro) |
+  |-------------------------+----------------------------+----------------------------|
+  | Introduzione del corso  | [[file:docs/opening-slides.pdf][scarica]]                    | [[file:docs/opening-print.pdf][scarica]]                    |
+  | Tutorial lab.           | [[file:docs/tutorial_lab-slides.pdf][scarica]]                    | [[file:docs/tutorial_lab-print.pdf][scarica]]                    |
+  | Ambienti Python         | [[file:docs/usarepython-slides.pdf][scarica]]                    | [[file:docs/usarepython-print.pdf][scarica]]                    |
+  | Cos'è la programmazione | [[file:docs/introprogrammazione-slides.pdf][scarica]]                    | [[file:docs/introprogrammazione-print.pdf][scarica]]                    |
+  |-------------------------+----------------------------+----------------------------|

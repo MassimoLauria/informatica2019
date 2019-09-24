@@ -3,6 +3,29 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-09-25 mer> Lezione 2 - Cos'è la programmazione
+
+  Discutiamo prevemente la struttura di  un calcolatore e alcune delle
+  persone  coinvolte nel  suo sviluppo.  Spieghiamo la  differenza tra
+  linguaggi naturali e artificiali, linguaggi di alto e basso livello,
+  linguaggi compilati e interpretati.
+   
+  Nella  seconda  parte  della   lezione  cominciamo  a  vedere  delle
+  operazioni interattive con python.  In questo contesto discutiamo il
+  concetto  di  valore e  tipo  del  dato,  e vediamo  come  costruire
+  espressioni utilizzando operazioni (aritmetiche e non) tra dati.
+  
+  Brevemente  vediamo una  carrellata di  possibilità per  lavorare in
+  ambiente python. 
+
+  *Materiale didattico*
+
+  Cos'è la programmazione: ([[file:docs/introprogrammazione-slides.pdf][schermo]]|[[file:docs/introprogrammazione-print.pdf][stampa]])
+  
+  Ambienti di lavoro python: ([[file:docs/usarepython-slides.pdf][schermo]]|[[file:docs/usarepython-print.pdf][stampa]])
+
+  *Lavoro assegnato:* leggere il capitolo 2 del libro di testo.
+
 * <2019-09-23 Mon> Lezione 1 - Introduzione
 
   Abbiamo introdotto il corso,  fornendo le informazioni logistiche di
