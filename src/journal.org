@@ -3,6 +3,21 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-09-26 gio> Lezione 3 - Scrivere programmi 
+
+  Recuperiamo alcune cose  che non siamo riusciti a  fare alla lezione
+  precedente  per problemi  logistici.  Vediamo  l'uso delle  funzioni
+  =type=, =print= e degli operatori su stringhe.
+
+  Vediamo come  si definisce e si  usa una variable, e  poi cominciamo
+  a scrivere programmi minimali su file, per poi eseguirli. Vediamo la
+  differenza nell'output tra sessione interattiva e programma eseguito
+  da file.
+
+  *Lavoro  assegnato:*  provare a  scrivere  ed  eseguire sequenze  di
+  istruzioni  salvate  su  file.  O  con  =pythonanywhere.com=  oppure
+  installando python sul vostro computer.
+
 * <2019-09-25 mer> Lezione 2 - Cos'è la programmazione
 
   Discutiamo prevemente la struttura di  un calcolatore e alcune delle
