@@ -21,3 +21,14 @@ che viene prodotto e pubblicato.
   | Ambienti Python         | [[file:docs/usarepython-slides.pdf][scarica]]                    | [[file:docs/usarepython-print.pdf][scarica]]                    |
   | Cos'è la programmazione | [[file:docs/introprogrammazione-slides.pdf][scarica]]                    | [[file:docs/introprogrammazione-print.pdf][scarica]]                    |
   |-------------------------+----------------------------+----------------------------|
+
+* Esercitazioni di laboratorio
+
+  Le esercitazioni fatte in laboratorio. Sul [[file:journal.org][diario]] potete trovare gli
+  stessi file, organizzati per data.
+
+  |---------------+---------|
+  | Contenuto     | PDF     |
+  |---------------+---------|
+  | Laboratorio 1 | [[file:docs/lab01.pdf][scarica]] |
+  |---------------+---------|

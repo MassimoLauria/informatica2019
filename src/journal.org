@@ -3,6 +3,12 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-09-30 Mon> Laboratorio 1
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab01.pdf][scarica]].
+
+  *Lavoro  assegnato:*  leggere dai paragrafi 5.1 a 5.8 
+
 * <2019-09-26 gio> Lezione 3 - Scrivere programmi 
 
   Recuperiamo alcune cose  che non siamo riusciti a  fare alla lezione
