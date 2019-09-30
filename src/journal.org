@@ -7,7 +7,7 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
   Esercitazione da fare in laboratorio: [[file:docs/lab01.pdf][scarica]].
 
-  *Lavoro  assegnato:*  leggere dai paragrafi 5.1 a 5.8 
+  *Lavoro  assegnato:*  leggere i paragrafi da 5.1 a 5.7 inclusi.
 
 * <2019-09-26 gio> Lezione 3 - Scrivere programmi 
 
