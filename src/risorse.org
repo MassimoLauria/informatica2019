@@ -20,6 +20,8 @@ che viene prodotto e pubblicato.
   | Tutorial lab.           | [[file:docs/tutorial_lab-slides.pdf][scarica]]                    | [[file:docs/tutorial_lab-print.pdf][scarica]]                    |
   | Ambienti Python         | [[file:docs/usarepython-slides.pdf][scarica]]                    | [[file:docs/usarepython-print.pdf][scarica]]                    |
   | Cos'è la programmazione | [[file:docs/introprogrammazione-slides.pdf][scarica]]                    | [[file:docs/introprogrammazione-print.pdf][scarica]]                    |
+  | Il vero e il falso      | [[file:docs/veroefalso-slides.pdf][scarica]]                    | [[file:docs/veroefalso-print.pdf][scarica]]                    |
+  | Logica booleana         | [[file:docs/logicabooleana-slides.pdf][scarica]]                    | [[file:docs/logicabooleana-print.pdf][scarica]]                    |
   |-------------------------+----------------------------+----------------------------|
 
 * Esercitazioni di laboratorio
