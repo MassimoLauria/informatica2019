@@ -3,6 +3,31 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-03 mer> Lezione 5 - Uso e scrittura di funzioni
+
+  Spieghiamo cos'è una  funzione e vediamo quelle già  usate a lezione
+  più altre  incluse nel modulo  =math=. Come si scrive  una funzione?
+  Passaggio  di   parametri,  e   differenza  tra   parametri  formali
+  e attuali. Visibilità  delle variabili, fuori e  dentro la funzione.
+  Funzioni che restituiscono dei valori.
+  
+  *Lavoro  assegnato:* scrivere i seguenti programmi
+
+  - Una funzione  =sconto(prezzo,sconto)=, che verifichi se  lo sconto
+    è un numero valido (ovvero se sia  compreso tra 0 e 100) e in caso
+    positivo stampi il prezzo scontato.
+
+  -  scrivere  una   funzione  =eqsecondogrado(A,B,C)=,   che  calcoli
+    e stampi le soluzioni dell'equazione di secondo grado $Ax^2 + Bx +
+    C =0$.
+
+  - scrivere una funzione =ordina(A,B,C)= che stampi in ordine dal più
+    piccolo  al più  grande  i valori  (non necessariamente  numerici)
+    passati come argomenti.  Non vi preoccupate di  gestire gli errori
+    dovuti  al  passaggio  di  argomenti che  non  sono  confrontabili
+    tra loro.
+  
+
 * <2019-10-02 mer> Lezione 4 - Esecuzione condizionale
 
   Vediamo  come fare  in modo  che il  programma faccia  delle scelte.
