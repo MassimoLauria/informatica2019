@@ -33,4 +33,5 @@ che viene prodotto e pubblicato.
   | Contenuto     | PDF     |
   |---------------+---------|
   | Laboratorio 1 | [[file:docs/lab01.pdf][scarica]] |
+  | Laboratorio 2 | [[file:docs/lab02.pdf][scarica]] |
   |---------------+---------|

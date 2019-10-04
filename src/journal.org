@@ -3,6 +3,12 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-07 lun> Laboratorio 2
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab02.pdf][scarica]].
+
+  *Lavoro  assegnato:*  leggere i paragrafi da 6.1 a 6.4 inclusi.
+
 * <2019-10-03 mer> Lezione 5 - Uso e scrittura di funzioni
 
   Spieghiamo cos'è una  funzione e vediamo quelle già  usate a lezione
@@ -13,7 +19,7 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   
   *Lavoro  assegnato:* scrivere i seguenti programmi
 
-  - Una funzione  =sconto(prezzo,sconto)=, che verifichi se  lo sconto
+  - Una funzione  =scontato(prezzo,sconto)=, che verifichi se  lo sconto
     è un numero valido (ovvero se sia  compreso tra 0 e 100) e in caso
     positivo stampi il prezzo scontato.
 
@@ -27,7 +33,6 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
     dovuti  al  passaggio  di  argomenti che  non  sono  confrontabili
     tra loro.
   
-
 * <2019-10-02 mer> Lezione 4 - Esecuzione condizionale
 
   Vediamo  come fare  in modo  che il  programma faccia  delle scelte.
