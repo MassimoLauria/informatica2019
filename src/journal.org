@@ -3,6 +3,17 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-09 mer> Lezione 6 - Esercizi sulle funzioni
+
+  Vediamo   qualche  piccola   nozione   aggiuntiva  sulle   stringhe:
+  caratteri non stampabili, confronti  e operatore =in=. Valore =None=
+  e funzioni che non restituiscono  nessun valore. Poi vediamo insieme
+  come fare un paio degli esercizi della scorsa esercitazione.
+
+  *Lavoro assegnato:* rivedere gli esercizi della scorsa esercitazione
+  e  provare   a  completarla.   *Mi  raccomando*  di   completare  il
+  questionario finale.
+
 * <2019-10-07 lun> Laboratorio 2
 
   Esercitazione da fare in laboratorio: [[file:docs/lab02.pdf][scarica]].
