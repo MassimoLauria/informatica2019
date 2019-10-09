@@ -3,12 +3,66 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
-* <2019-10-09 mer> Lezione 6 - Esercizi sulle funzioni
+* <2019-10-10 gio> Lezione 7 - Ancora Esercizi (2)
 
   Vediamo   qualche  piccola   nozione   aggiuntiva  sulle   stringhe:
-  caratteri non stampabili, confronti  e operatore =in=. Valore =None=
-  e funzioni che non restituiscono  nessun valore. Poi vediamo insieme
-  come fare un paio degli esercizi della scorsa esercitazione.
+  - caratteri non stampabili
+  - confronti tra stringhe
+  - operatore =in=
+  - valore =None= e tipo =NoneType=
+    
+  Poi vediamo insieme come fare un esercizio della scorsa esercitazione.
+
+  *Lavoro assegnato:* rivedere gli esercizi della scorsa esercitazione
+  e  provare   a  completarli,  inserendo  anche   delle  stringhe  di
+  documentazione.     *Mi     raccomando*     di     completare     il
+  questionario finale.
+
+* <2019-10-09 mer> Lezione 6 - Esercizi sulle funzioni
+
+  Abbiamo  visto  come  scrivere  una funzione  passo  passo,  e  come
+  perfezionarla   e  inserirla   nel   contensto   di  un   programma.
+  Abbiamo  anche visto  come  inserire una  stringa di  documentazione
+  nella  funzione.  In  questo  contesto  abbiamo  visto  le  stringhe
+  multilinea (ovvero quelle aperte e chiuse da tre apici o virgolette).
+
+  Insieme abbiamo scritto il programma:
+
+#+BEGIN_SRC python :exports both :results output
+def hello(nome,età):
+    """Produce un saluto personalizzato
+    
+    Questa funzione produce un saluto di presentazione
+    che include le informazioni di `nome` ed `età`.
+    """
+    coda = " anni."
+    if età == 1:
+        coda = " anno."
+    return "Ciao, sono "+nome+". Ho "+str(età)+coda
+
+def stampa_incorniciato(testo):
+    lunghezza = len(testo) 
+    cornice = '*' * (lunghezza + 4) 
+    print(cornice)
+    print("* "+testo+' *')
+    print(cornice)
+
+stampa_incorniciato(hello('Marcello',23))
+stampa_incorniciato("Testo arbitrario.")
+stampa_incorniciato(hello('Giulia',1))
+#+END_SRC
+
+#+RESULTS:
+: ************************************
+: * Ciao, sono Marcello. Ho 23 anni. *
+: ************************************
+: *********************
+: * Testo arbitrario. *
+: *********************
+: *********************************
+: * Ciao, sono Giulia. Ho 1 anno. *
+: *********************************
+  
 
   *Lavoro assegnato:* rivedere gli esercizi della scorsa esercitazione
   e  provare   a  completarla.   *Mi  raccomando*  di   completare  il
