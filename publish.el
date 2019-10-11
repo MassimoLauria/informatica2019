@@ -28,6 +28,15 @@
 
 
 ;;; Use the packages installed in my Emacs
+;; Emacs packages
+(setq package-user-dir (concat "~/.emacs.d/elpa/" emacs-version))
+(setq package-archives  '(("gnu" . "http://elpa.gnu.org/packages/")
+                          ("elpa" . "http://tromey.com/elpa/")
+                          ("melpa"        . "http://melpa.org/packages/")
+                          ("org" . "https://orgmode.org/elpa/")
+                          ))
+
+
 (require 'package)
 (package-initialize)
 
