@@ -3,6 +3,12 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-14 lun> Laboratorio 3
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab03.pdf][scarica]].
+
+  *Lavoro  assegnato:*  leggere il Capitolo 7.
+
 * <2019-10-10 gio> Lezione 7 - Ancora Esercizi (2)
 
   Vediamo   qualche  piccola   nozione   aggiuntiva  sulle   stringhe:
