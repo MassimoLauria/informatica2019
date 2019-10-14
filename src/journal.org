@@ -3,9 +3,31 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-16 mer> Lezione 8 - Iterazione 
+
+  Abbiamo visto come ripetere l'esecuzione di blocchi di codice con il
+  costrutto =while=.
+
+  Abbiamo visto degli esempi di come  usare il ciclo =while=. Il testo
+  di questi esempi verrà allegato dopo la lezione.
+
+  *Lavoro  assegnato:*  ri-leggere il Capitolo 7.
+
 * <2019-10-14 lun> Laboratorio 3
 
   Esercitazione da fare in laboratorio: [[file:docs/lab03.pdf][scarica]].
+
+  Prima di  iniziare l'esercitazione abbiamo discusso  di come gestire
+  l'indentazione, e più  in particolare di come  risolvere il problema
+  delle  tabulazioni mischiate  a  spazi. Nel  materiale didattico  di
+  questa lezione potrete trovare delle slide a riguardo.
+
+  Oltretutto gli esercizi di oggi  hanno previsto la spiegazione degli
+  assegnamenti multipli e del ritorno di valori multipli.
+
+  *Materiale didattico*
+
+  Indentazione: ([[file:docs/indentazione-slides.pdf][schermo]]|[[file:docs/indentazione-print.pdf%0A][stampa]])
 
   *Lavoro  assegnato:*  leggere il Capitolo 7.
 
