@@ -25,6 +25,7 @@ che viene prodotto e pubblicato.
   | Il valore =None=        | [[file:docs/valorenone-slides.pdf][scarica]]                    | [[file:docs/valorenone-print.pdf][scarica]]                    |
   | Indentazione            | [[file:docs/indentazione-slides.pdf][scarica]]                    | [[file:docs/indentazione-print.pdf][scarica]]                    |
   | Uso/Scrittura di moduli | [[file:docs/moduli-slides.pdf][scarica]]                    | [[file:docs/moduli-print.pdf][scarica]]                    |
+  | Ciclo =while=           | [[file:docs/ciclowhile-slides.pdf][scarica]]                    | [[file:docs/ciclowhile-print.pdf][scarica]]                    |
   |-------------------------+----------------------------+----------------------------|
 
 * Esercitazioni di laboratorio

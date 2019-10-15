@@ -6,10 +6,13 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 * <2019-10-16 mer> Lezione 8 - Iterazione 
 
   Abbiamo visto come ripetere l'esecuzione di blocchi di codice con il
-  costrutto =while=.
+  costrutto =while=. Abbiamo visto degli esempi di come usare il ciclo
+  =while=.
 
-  Abbiamo visto degli esempi di come  usare il ciclo =while=. Il testo
-  di questi esempi verrà allegato dopo la lezione.
+  *Materiale didattico*
+
+  Ciclo =while=: ([[file:docs/ciclowhile-slides.pdf][schermo]]|[[file:docs/ciclowhile-print.pdf][stampa]])
+
 
   *Lavoro  assegnato:*  ri-leggere il Capitolo 7.
 
