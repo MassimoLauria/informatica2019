@@ -39,9 +39,13 @@
 
 * Avvisi
 
+
   <2019-10-21  lun> Il  giorno Lunedì  21 Ottobre  il mio  ricevimento
   salterà e  verrà spostato  a Mercoledì 23  Ottobre dalle  15.00 alle
   17.00.
+
+  <2019-10-18 Fri>  La data  del quinto appello  è stata  spostata da
+  Lunedì 7 Settembre 2020 a Venerdì 18 Settembre 2020.
   
  
 * Descrizione del corso

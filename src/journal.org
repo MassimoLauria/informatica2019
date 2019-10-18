@@ -3,6 +3,28 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-21 lun> Laboratorio 4
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab04.pdf][scarica]].
+
+  Prima   di  iniziare   l'esercitazione  vedremo   un  pochino   come
+  funziona Thonny.
+
+  *Lavoro  assegnato:*  leggere l'appendice A del libro di testo.
+
+* <2019-10-17 Thu> Lezione 9 - Ancora sul ciclo =while=
+
+  Abbiamo visto altri esempi di come usare il ciclo =while=, ed esempi
+  di cili annidati.
+
+  *Materiale didattico*
+
+  Ciclo =while=: ([[file:docs/ciclowhile-slides.pdf][schermo]]|[[file:docs/ciclowhile-print.pdf][stampa]])
+
+  *Lavoro assegnato:*  Installare e  usare Thonny. Provare  a scrivere
+  e modificare  gli esercizi presenti  nelle slide, usando  Thonny per
+  il debug.
+
 * <2019-10-16 mer> Lezione 8 - Iterazione 
 
   Abbiamo visto come ripetere l'esecuzione di blocchi di codice con il
