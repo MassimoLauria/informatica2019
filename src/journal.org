@@ -3,6 +3,21 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-23 mer> Lezione 10 - Gestione errori
+  
+  Vediamo degli esempi tramite Thonny, e in particolare come evolve lo
+  /stack/ delle chiamate a funzione. In questo contesto discutiamo
+  - visibilità delle variabili
+  - chiamate di funzioni annidate
+  Vediamo anche  come sollevare  errori, simili  a quelli  che solleva
+  Python in certe condizioni.
+
+  *Materiale didattico*
+
+  Gestione degli errori: ([[file:docs/gestionerrori-slides.pdf][schermo]]|[[file:docs/gestionerrori-print.pdf][stampa]])
+ 
+  *Lavoro  assegnato:* leggere il Capitolo 8.
+
 * <2019-10-21 lun> Laboratorio 4
 
   Esercitazione da fare in laboratorio: [[file:docs/lab04.pdf][scarica]].

@@ -26,6 +26,7 @@ che viene prodotto e pubblicato.
   | Indentazione            | [[file:docs/indentazione-slides.pdf][scarica]]                    | [[file:docs/indentazione-print.pdf][scarica]]                    |
   | Uso/Scrittura di moduli | [[file:docs/moduli-slides.pdf][scarica]]                    | [[file:docs/moduli-print.pdf][scarica]]                    |
   | Ciclo =while=           | [[file:docs/ciclowhile-slides.pdf][scarica]]                    | [[file:docs/ciclowhile-print.pdf][scarica]]                    |
+  | Gestione degli errori   | [[file:docs/gestionerrori-slides.pdf][scarica]]                    | [[file:docs/gestionerrore-print.pdf][scarica]]                    |
   |-------------------------+----------------------------+----------------------------|
 
 * Esercitazioni di laboratorio
@@ -41,3 +42,4 @@ che viene prodotto e pubblicato.
   | Laboratorio 3 | [[file:docs/lab03.pdf][scarica]] |
   | Laboratorio 4 | [[file:docs/lab04.pdf][scarica]] |
   |---------------+---------|
+  
