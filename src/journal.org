@@ -3,12 +3,90 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
-* <2019-10-23 mer> Lezione 10 - Gestione errori
+* <2019-10-24 gio> Lezione 11 - Stringhe e scrittura di moduli
+
+  Vediamo come le stringhe  possano essere considerate delle sequenze,
+  e come si  possa lavorare su di essere usando  l'indicizzazione e lo
+  slicing.  Vediamo  anche  come utilizzare  alcuno  ``metodi''  delle
+  stringhe. Poi discutiamo l'uso e  la gestione dei moduli python, per
+  scrivere programmi su file multipli.
+
+  *Materiale didattico*
+
+  Uso e scrittura di moduli: ([[file:docs/moduli-slides.pdf][schermo]]|[[file:docs/moduli-print.pdf][stampa]])
+ 
+  *Lavoro  assegnato:*  ripetere   gli  esercizi  delle  esercitazioni
+  inserendo del codice per la gestione dei parametri sbagliati, usando
+  =TypeError= e =ValueError= dove appropriato.
+
+* <2019-10-23 mer> Lezione 10 - Stack, frame e gestione errori
+
+  Abbiamo visto come cercare le triple pitagoriche con cicli annidati.
+
+#+BEGIN_SRC python :exports both :results output
+N = 15
+
+a = 1
+while a <= N:
+    b = a+1
+    while b <= N:
+        c = b+1
+        while c <= N:
+            if a**2 + b**2 == c**2:
+                print(a,b,c)
+            c += 1 
+        b += 1
+    a += 1
+#+END_SRC
+
+#+RESULTS:
+: 3 4 5
+: 5 12 13
+: 6 8 10
+: 9 12 15
+
   
   Vediamo degli esempi tramite Thonny, e in particolare come evolve lo
   /stack/ delle chiamate a funzione. In questo contesto discutiamo
-  - visibilità delle variabili
-  - chiamate di funzioni annidate
+
+  Visibilità delle variabili
+#+BEGIN_SRC python :exports code :results output
+# Questa funzione ridefinisce x
+def prova():
+    x = 6       # x interna, che
+                # nasconde eventuali x
+                # esterne
+    print(x)
+
+x = 10          # x esterna
+prova()    
+print(x)        # x esterna è immutata
+#+END_SRC
+
+  Chiamate di funzioni  annidate e frame di  esecuzione (paragrafo 3.9
+  del libro)
+#+BEGIN_SRC python :exports code :results output
+def livello_esterno(x):
+    print("Entro nel livello esterno col valore ",x)
+    livello_medio(21)
+    print("Esco dal livello esterno col valore",x)
+
+def livello_medio(y):
+    print("Entro nel livello medio col valore ",y)
+    livello_interno('aaa')
+    print("Esco dal livello medio col valore",y)
+
+def livello_interno(z):
+    print("Entro nel livello interno col valore ",z)
+    print("Esco dal livello interno col valore",z)
+
+    
+print("Corpo principale del programma")
+livello_esterno(1.2)
+print("fine")
+#+END_SRC
+
+
   Vediamo anche  come sollevare  errori, simili  a quelli  che solleva
   Python in certe condizioni.
 
