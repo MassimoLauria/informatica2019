@@ -10,6 +10,38 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   slicing.  Vediamo  anche  come utilizzare  alcuno  ``metodi''  delle
   stringhe. Poi discutiamo l'uso e  la gestione dei moduli python, per
   scrivere programmi su file multipli.
+  
+  Abbiamo introdotto il  ciclo =for= su caratteri di una  stringa e su
+  sequenze di interi ottenute tramite la funzione =range=.
+  
+#+BEGIN_SRC python :exports both :results output
+X = 'stringa di prova'
+
+# Ciclo while
+i = 0
+while i < len(X):
+    print(X[i], end='-')
+    i += 1
+
+print('')
+
+# Ciclo For su indici
+for t in range(len(X)):
+    print(X[t], end='-')
+
+print('')
+
+# Ciclo For su caratteri
+for c in X:
+    print(c, end='-')
+#+END_SRC
+
+#+RESULTS:
+: s-t-r-i-n-g-a- -d-i- -p-r-o-v-a-
+: s-t-r-i-n-g-a- -d-i- -p-r-o-v-a-
+: s-t-r-i-n-g-a- -d-i- -p-r-o-v-a-
+  
+
 
   *Materiale didattico*
 
