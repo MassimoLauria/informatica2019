@@ -3,6 +3,34 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-28 lun> Laboratorio 5
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab05.pdf][scarica]].
+
+  File di test: [[file:code/test_lab05.py][test_lab05.py]]
+
+  Per la prima  volta l'esercitazione sarà munita di un  file di test,
+  simile a quello  che userete per l'esame. Vedremo  come usare questi
+  file di test per aiutarsi a scrivere dei programmi corretti.
+
+  In breve, dovete scrivere le  funzioni che risolvono gli esercizi in
+  un file  =lab05.py=, e  queste funzioni  che avete  scritto verranno
+  usate  dal  programma  =test_lab05.py= nei  test.  Più  precisamente
+  dovrete:
+
+  - scaricare il file =test_lab05.py=
+  - salvare le vostre funzioni in un file =lab05.py=
+  - metterli nella stessa cartella
+
+Man mano  che lavorate  sui vostri esercizi  potete testare  le vostre
+soluzioni eseguendo.
+
+#+begin_example
+$ python3 test_lab05.py
+#+end_example
+
+  *Lavoro  assegnato:*  leggere il capitolo 10 del libro di testo.
+
 * <2019-10-24 gio> Lezione 11 - Stringhe e scrittura di moduli
 
   Vediamo come le stringhe  possano essere considerate delle sequenze,
