@@ -72,7 +72,7 @@ quindi i test avranno luogo.
 
 La prima riga subito dopo la cornice di asterischi contiene:
 - un punto . per ogni test riuscito
-- una carattere F per ogni test fallito
+- un carattere F per ogni test fallito
 - un carattere E per ogni test che non è stato possiblie eseguire
 *********************************************************************
 """
@@ -260,8 +260,6 @@ MOTIVO DEL FALLIMENTO:
 
             
 class TestLab05TernePitagoriche(unittest.TestCase):
-
-    L = [(3, 4, 5), (6, 8, 10), (5, 12, 13), (9, 12, 15), (8, 15, 17), (12, 16, 20), (7, 24, 25), (15, 20, 25), (10, 24, 26), (20, 21, 29), (18, 24, 30), (16, 30, 34), (21, 28, 35), (12, 35, 37), (15, 36, 39), (24, 32, 40), (9, 40, 41), (27, 36, 45), (14, 48, 50), (30, 40, 50)]
     
     def errormsg(self,N,expected,result):
         messaggio = """
@@ -360,8 +358,6 @@ MOTIVO DEL FALLIMENTO:
         
 class TestLab05TernePitagoriche2(unittest.TestCase):
 
-    L = [(3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25), (20, 21, 29), (12, 35, 37), (9, 40, 41)]
-    
     def errormsg(self,N,expected,result):
         messaggio = """
 
