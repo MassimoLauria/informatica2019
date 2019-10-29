@@ -3,6 +3,26 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-10-30 mer> Lezione 12 - Liste e sequenze
+
+  Introduciamo  un  utilissimo  modo   di  strutturare  dati  in  modo
+  sequenziale, ovvero le liste. Le liste sono uno dei tipi di dati più
+  utilizzati in python.
+
+  - definizione di liste
+  - indicizzazione e slicing
+  - mutabilità (*argomento delicato e importante*)
+  - ciclo for su lista
+  - operazioni di concatenazione =+= e ripetizione =*=
+  - operatore =in=
+  - metodi =append=, =extend=, =sort=  
+  - lista vs stringa di caratteri
+  - copia di lista
+  - liste, range e tuple
+
+  *Lavoro assegnato:* rileggere il capitolo  10 e fare gli esercizi da
+  10.2 a 10.5 e il 10.8.
+
 * <2019-10-28 lun> Laboratorio 5
 
   Esercitazione da fare in laboratorio: [[file:docs/lab05.pdf][scarica]].
