@@ -3,7 +3,29 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
-* <2019-10-30 mer> Lezione 12 - Liste e sequenze
+* <2019-10-31 gio> Lezione 13 - Ancora su liste e sequenze
+
+  Continuiamo con le liste, e allarghiamo  il discorso a quelle che in
+  Python vengono definite ``sequenze''
+
+  - cancellazione di elementi dalla lista
+  - metodo =clear=, =index=, =insert=
+  - metodo =pop= (con argomento e senza) e =remove=
+  - cooperazione tra stringhe e liste: =join= e =split= 
+  - differenza tra stringhe e liste: =count=
+  - la tupla: una versione immutabile della lista
+  - chiarimenti su =range=
+  - liste, stringhe, tuple e =range= sono sequenze
+  - =help= su metodi
+  - esercizio: somma di numeri
+  - esercizio: somma cumulativa
+  - esercizio: calcolo di massimo e minimo
+  - esercizio: verificare che una sequenza sia ordinata
+  - funzioni =sum=, =min=, =max=
+
+  *Lavoro assegnato:* fare gli esercizi da 10.2 a 10.5 e il 10.8. 
+
+* <2019-10-30 mer> Lezione 12 - Liste
 
   Introduciamo  un  utilissimo  modo   di  strutturare  dati  in  modo
   sequenziale, ovvero le liste. Le liste sono uno dei tipi di dati più
@@ -12,13 +34,17 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   - definizione di liste
   - indicizzazione e slicing
   - mutabilità (*argomento delicato e importante*)
-  - ciclo for su lista
+  - variabili come riferimenti a memoria
+  - ciclo su lista, per indici e per valori
   - operazioni di concatenazione =+= e ripetizione =*=
   - operatore =in=
-  - metodi =append=, =extend=, =sort=  
-  - lista vs stringa di caratteri
-  - copia di lista
-  - liste, range e tuple
+  - differenza tra =in= per liste e stringhe
+  - metodi =append=, =extend=, =sort=, =count=  
+  - funzioni =len= e =sorted=
+  - differenza tra =append= e =extend=
+  - funzioni che modificano/non modificano la lista
+  - copiare una lista
+  - differenza tra copia e assegnamento tra liste
 
   *Lavoro assegnato:* rileggere il capitolo  10 e fare gli esercizi da
   10.2 a 10.5 e il 10.8.

@@ -32,7 +32,8 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   - prova scritta: dalle ore 9.00 alle 11.00
   - prova di programmazione: dalle ore 11.30 alle ore 13.30
 
-  E sarà possibile presentarsi per una sola delle due prove.
+  È  anche  possibile  svolgere  le   due  prove  in  appelli  diversi
+  presentandosi, in un dato appello, per una sola di esse.
 
 ** Note  ulteriori
 
