@@ -34,13 +34,14 @@ che viene prodotto e pubblicato.
   Le esercitazioni fatte in laboratorio. Sul [[file:journal.org][diario]] potete trovare gli
   stessi file, organizzati per data.
 
-  |---------------+---------+--------------|
-  | Contenuto     | PDF     | File di test |
-  |---------------+---------+--------------|
-  | Laboratorio 1 | [[file:docs/lab01.pdf][scarica]] |              |
-  | Laboratorio 2 | [[file:docs/lab02.pdf][scarica]] |              |
-  | Laboratorio 3 | [[file:docs/lab03.pdf][scarica]] |              |
-  | Laboratorio 4 | [[file:docs/lab04.pdf][scarica]] |              |
-  | Laboratorio 5 | [[file:docs/lab05.pdf][scarica]] | [[file:code/test_lab05.py][scarica]]      |
-  |---------------+---------+--------------|
+  |---------------+---------|
+  | Contenuto     | PDF     |
+  |---------------+---------|
+  | Laboratorio 1 | [[file:docs/lab01.pdf][scarica]] |
+  | Laboratorio 2 | [[file:docs/lab02.pdf][scarica]] |
+  | Laboratorio 3 | [[file:docs/lab03.pdf][scarica]] |
+  | Laboratorio 4 | [[file:docs/lab04.pdf][scarica]] |
+  | Laboratorio 5 | [[file:docs/lab05.pdf][scarica]] |
+  | Laboratorio 6 | [[file:docs/lab06.pdf][scarica]] |
+  |---------------+---------|
   

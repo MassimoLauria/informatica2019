@@ -3,6 +3,23 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-11-04 Mon> Laboratorio 6
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab06.pdf][scarica]].
+
+   |------------------+------------------------------|
+   | Esercizio        | file di test                 |
+   |------------------+------------------------------|
+   | Somma di liste   | [[file:code/test_lab06sommaliste.py][test_lab06sommaliste.py]]      |
+   | Prodotto scalare | [[file:code/test_lab06prodottoscalare.py][test_lab06prodottoscalare.py]] |
+   | Separa  elementi | [[file:code/test_lab06separa.py][test_lab06separa.py]]          |
+   | Intersezione     | [[file:code/test_lab06intersezione.py][test_lab06intersezione.py]]    |
+   | Unione           | [[file:code/test_lab06unione.py][test_lab06unione.py]]          |
+   |------------------+------------------------------|
+  
+  Man mano che  lavorate sui vostri esercizi potete  testare le vostre
+  soluzioni eseguendo i file di test corrispondenti.
+
 * <2019-10-31 gio> Lezione 13 - Ancora su liste e sequenze
 
   Continuiamo con le liste, e allarghiamo  il discorso a quelle che in
