@@ -151,7 +151,19 @@ MOTIVO DEL FALLIMENTO:
 
 MOTIVO DEL FALLIMENTO:
     La funzione somma_liste su input {0} e {1} dovrebbe sollevare
-    'TypeError' perché accetta solo liste contenenti numeri come argomento."""
+    'TypeError' perché accetta solo liste contenenti numeri interi come argomento."""
+        messaggio = messaggio.format(repr(lista1), repr(lista2))
+        with self.assertRaises(TypeError,msg=messaggio):
+            somma_liste(lista1, lista2)
+
+    def test_liste_float(self):
+        lista1=[3, -2.1, 5]
+        lista2=[2, 8, 0]
+        messaggio = """
+
+MOTIVO DEL FALLIMENTO:
+    La funzione somma_liste su input {0} e {1} dovrebbe sollevare
+    'TypeError' perché accetta solo liste contenenti numeri interi come argomento."""
         messaggio = messaggio.format(repr(lista1), repr(lista2))
         with self.assertRaises(TypeError,msg=messaggio):
             somma_liste(lista1, lista2)
