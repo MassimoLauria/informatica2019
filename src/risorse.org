@@ -3,9 +3,10 @@
 In questa pagina  teniamo un indice del materiale  didattico, man mano
 che viene prodotto e pubblicato.
 
-* Libro di testo  
+* Libri di testo e appunti  
 
   - [[file:docs/PensareInPython.pdf][Pensare in Python - Come Pensare da Informatico]] di Allen B. Downey
+  - [[file:docs/algoritmi.pdf][Appunti su algoritmi e complessità]] di Massimo Lauria
 
 * Diapositive 
 

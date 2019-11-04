@@ -66,17 +66,22 @@
   - [[file:docs/PensareInPython.pdf][Pensare in Python - Come Pensare da Informatico]] di Allen B. Downey
 
   In più  per la parte  teorica legata  ad algoritmi e  complessità ci
-  sono delle dispense che verranno rese  disponibili a mano a mano che
-  si procede nel corso. Gran parte di questo materiale deriva un libro
-  di testo  che non è  necessario per il corso  (visto che ci  sono le
-  dispense) ma al quale può essere utile riferirsi per approfondimenti
-  o chiarimenti.
+  sono degli appunti prodotti dal docente.
+
+  - [[file:docs/algoritmi.pdf][Appunti su algoritmi e complessità]] di Massimo Lauria
+
+  Gli  appunti  sono  soggetti  a  modifiche  e  correzioni  continue,
+  pertanto non  è consigliabile  stamparle in  blocco. Gran  parte del
+  materiale di questi  appunti può essere approfondito su  un libro di
+  testo che non è necessario per il corso ma al quale può essere utile
+  riferirsi per chiarimenti.
 
   - /Introduzione  agli  algoritmi  e  strutture dati/  di  Thomas  H.
     Cormen, Charles E. Leiserson, e al.
 
-  Durente  le lezioni  verranno  prodotte dispense  e diapositive  che
-  verranno rese disponibili sulla pagina del [[file:journal.org][diario del corso]].
+  Appunti, diapositive e  tutto il resto del  materiale didattico sono
+  disponibili [[file:risorse.org][alla pagina apposita]], e sono riferiti anche dalla pagina
+  del [[file:journal.org][diario del corso]].
 
   /Ulteriori risorse/
   
