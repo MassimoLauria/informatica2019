@@ -3,6 +3,22 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-11-06 mer> Lezione 14 - Esercizi su liste
+
+  Altri esercizi su liste e sequenze
+
+  - esercizio: calcolo di massimo e minimo;
+  - esercizio: verificare che una sequenza sia ordinata;
+  - funzioni =sum=, =min=, =max=.
+    
+  Poi  vedremo   l'uso  di   parametri  opzionali  per   le  funzioni.
+
+  - esercizio: minimo in un segmento della lista;
+  - esercizio: somma di un segmento della lista;
+  - esempi con =sorted=.
+
+  *Lavoro assegnato:* Leggere i paragrafi 3.9, 5.8, 5.9 e 5.10.
+
 * <2019-11-04 Mon> Laboratorio 6
 
   Esercitazione da fare in laboratorio: [[file:docs/lab06.pdf][scarica]].
@@ -36,9 +52,6 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   - =help= su metodi
   - esercizio: somma di numeri
   - esercizio: somma cumulativa
-  - esercizio: calcolo di massimo e minimo
-  - esercizio: verificare che una sequenza sia ordinata
-  - funzioni =sum=, =min=, =max=
 
   *Lavoro assegnato:* fare gli esercizi da 10.2 a 10.5 e il 10.8. 
 
