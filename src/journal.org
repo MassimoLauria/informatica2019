@@ -3,6 +3,27 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* COMMENT <2019-11-07 gio> Lezione 15 - Funzioni ricorsive
+
+  Discutiamo  la scrittura  di funzioni  in maniera  ricorsiva, ovvero
+  attraverso del codice  Python che richiama sé  stesso. La ricorsione
+  porta  a  scrivere  programmi  molto  eleganti  ma  se  usata  senza
+  attenzione pone dei problemi:
+  - uso eccessivo dello stack;
+  - ripetizione  di calcoli  già effettuati  con esplosione  del tempo
+    di esecuzione.
+
+  In   questi   casi  è   conveniente   riscrivere   le  funzioni   in
+  versione iterativa.  Questo è particolarmente vero  per funzioni che
+  calcolano
+  - fattoriale;
+  - numeri di Fibonacci.
+  
+  Invece la versione ricorsiva per calcolare il Massimo comun divisore
+  è più che sufficiente.
+
+  *Materiale didattico*: leggere il capitolo 7 degli Appunti.
+
 * <2019-11-06 mer> Lezione 14 - Esercizi su liste
 
   Altri esercizi su liste e sequenze
