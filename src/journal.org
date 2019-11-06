@@ -3,7 +3,7 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
-* COMMENT <2019-11-07 gio> Lezione 15 - Funzioni ricorsive
+* <2019-11-07 gio> Lezione 15 - Funzioni ricorsive
 
   Discutiamo  la scrittura  di funzioni  in maniera  ricorsiva, ovvero
   attraverso del codice  Python che richiama sé  stesso. La ricorsione
@@ -29,15 +29,89 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   Altri esercizi su liste e sequenze
 
   - esercizio: calcolo di massimo e minimo;
-  - esercizio: verificare che una sequenza sia ordinata;
+  - esercizio:  verificare  che  una  sequenza sia  ordinata  in  modo
+    crescente;
   - funzioni =sum=, =min=, =max=.
     
-  Poi  vedremo   l'uso  di   parametri  opzionali  per   le  funzioni.
+  Poi vedremo l'uso di parametri opzionali per le funzioni
 
-  - esercizio: minimo in un segmento della lista;
-  - esercizio: somma di un segmento della lista;
-  - esempi con =sorted=.
+  - verifica  che un  segmento di  una sequenza  sia ordinata  in modo
+    crescente.
 
+#+BEGIN_SRC python :exports both :results output
+def ordinata(seq,start=0,stop=None):
+    start=max(0,start)
+    if stop is None or stop > len(seq):
+        stop=len(seq)
+    for i in range(start,stop-1):
+        if seq[i]>seq[i+1]:
+            return False
+    return True
+
+print( ordinata([7,5,4,1,4,6,2]) )
+print( ordinata([7,5,4,1,4,6,2],6) )
+print( ordinata([7,5,4,1,4,6,2],3,6) )
+#+END_SRC
+
+#+RESULTS:
+: False
+: True
+: True
+
+
+  Rappresentazione Python di matrici come liste di  liste. Ad esempio
+  una matrice 
+\begin{bmatrix}
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 \\
+10 & 11 & 12
+\end{bmatrix}
+  viene rappresentata in Python come la lista 
+
+: [[1,2,3], [4,5,6], [7,8,9], [10,11,12]]  
+
+  - creazione di una matrice con valori uguali;
+  - calcolo della matrice trasposta.
+
+#+BEGIN_SRC python :exports both :results output
+import random
+def matrixcreate(r,c,fillvalue=0):
+    M=[]
+    for i in range(r):
+        M.append( [fillvalue]*c)
+    return M
+
+def matrixsize(A):
+    return len(A),len(A[0])
+
+def matrixtranspose(A):
+    r,c = matrixsize(A)
+    T   = matrixcreate(c,r)
+    for i in range(c):
+        for j in range(r):
+            T[i][j] = A[j][i]
+    return T
+
+def matrixrandomfill(A):
+    r,c = matrixsize(A)
+    for i in range(r):
+        for j in range(c):
+            A[i][j] = random.randint(0,100)
+
+A = matrixcreate(4,2)
+matrixrandomfill(A)
+B = matrixtranspose(A)
+print(A)
+print(B)
+#+END_SRC
+
+#+RESULTS:
+: [[16, 92], [77, 52], [76, 34], [51, 42]]
+: [[16, 77, 76, 51], [92, 52, 34, 42]]
+
+
+  
   *Lavoro assegnato:* Leggere i paragrafi 3.9, 5.8, 5.9 e 5.10.
 
 * <2019-11-04 Mon> Laboratorio 6
