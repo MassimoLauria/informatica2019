@@ -22,7 +22,7 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   Invece la versione ricorsiva per calcolare il Massimo comun divisore
   è più che sufficiente.
 
-  *Materiale didattico*: leggere il capitolo 7 degli Appunti.
+  *Materiale didattico*: Capitolo 7 degli Appunti.
 
 * <2019-11-06 mer> Lezione 14 - Esercizi su liste
 
