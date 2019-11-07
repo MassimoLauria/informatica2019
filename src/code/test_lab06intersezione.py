@@ -25,7 +25,7 @@ import sys
 import os
 
 # Stampa un'intestazione che descrive l'esercizio
-lista_delle_funzioni="\n".join("  -"+f for f in ex_functions)
+lista_delle_funzioni="\n".join("  - "+f for f in ex_functions)
 print(__doc__.format(ex_name,lista_delle_funzioni))
 
 

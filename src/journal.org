@@ -3,6 +3,23 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-11-18 Mon> Laboratorio 7
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab07.pdf][scarica]].
+
+   |------------------------------+--------------------------------|
+   | Esercizio                    | file di test                   |
+   |------------------------------+--------------------------------|
+   | Creazione di una lista       | [[file:code/test_lab07crealista.py][test_lab07crealista.py]]         |
+   | Creazione di lista con passo | [[file:code/test_lab07crealistaconpasso.py][test_lab07crealistaconpasso.py]] |
+   | Azzera elementi negativi     | [[file:code/test_lab07azzeranegativi.py][test_lab07azzeranegativi.py]]    |
+   | Posizione del minimo         | [[file:code/test_lab07minimo.py][test_lab07minimo.py]]            |
+   | Massimi locali               | [[file:code/test_lab07massimilocali.py][test_lab07massimilocali.py]]     |
+   |------------------------------+--------------------------------|
+  
+  Man mano che  lavorate sui vostri esercizi potete  testare le vostre
+  soluzioni eseguendo i file di test corrispondenti.
+
 * <2019-11-07 gio> Lezione 15 - Funzioni ricorsive
 
   Discutiamo  la scrittura  di funzioni  in maniera  ricorsiva, ovvero

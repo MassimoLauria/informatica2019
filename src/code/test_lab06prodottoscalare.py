@@ -25,7 +25,7 @@ import sys
 import os
 
 # Stampa un'intestazione che descrive l'esercizio
-lista_delle_funzioni="\n".join("  -"+f for f in ex_functions)
+lista_delle_funzioni="\n".join("  - "+f for f in ex_functions)
 print(__doc__.format(ex_name,lista_delle_funzioni))
 
 
@@ -72,7 +72,7 @@ quindi i test avranno luogo.
 
 La riga che rappresenta l'esito dei test contiene:
 - un punto . per ogni test riuscito
-- una carattere F per ogni test fallito
+- un carattere F per ogni test fallito
 - un carattere E per ogni test che non è stato possibile eseguire
 **********************************************************************
 *******                     ESITO DEI TEST                     *******

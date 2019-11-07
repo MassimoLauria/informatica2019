@@ -14,8 +14,8 @@ anche se non capite tutte le informazioni prodotte da questo
 programma, leggete quelle che capite perché vi possono aiutare nello
 svolgimento degli esercizi.
 """
-ex_name      ='lab06unione'
-ex_functions =['unione'] 
+ex_name      ='lab07massimilocali'
+ex_functions =['massimi_locali'] 
 
 
 #---------------------------------------------------
@@ -97,97 +97,103 @@ else:
 from pprint import pformat
 
 
-class TestLab06Unione(unittest.TestCase):
+class TestLab7(unittest.TestCase):
 
-    def errormsg(self,lista1,lista2,expected,result):
+    def errormsg(self,lista,expected,result):
         messaggio = """
 
 MOTIVO DEL FALLIMENTO:
-    Il risultato sulle liste {0} e {1} dovrebbe essere {2}, invece il programma 
-    restituisce {3}"""
-        messaggio = messaggio.format(lista1,lista2,expected,result)
+    La chiamata con parametro {0} dovrebbe restituire il valore {1}, invece
+restituisce {2}"""
+        messaggio = messaggio.format(lista,expected,result)
         return messaggio
     
-    def test_liste_vuote(self):
-        lista1=[]
-        lista2=[]
+    def errormsgmodlista(self,lista_orig,lista_mod):
+        messaggio = """
+
+MOTIVO DEL FALLIMENTO:
+    La funzione non deve modificare la lista passata come argomento: riceve la lista {0}  e la modifica in {1}"""
+        messaggio = messaggio.format(lista_orig,lista_mod)
+        return messaggio
+    
+    def test_lista_immutata(self):
+        lista_orig=[3, 6, 4, 4, 6, 5]
+        lista_mod=lista_orig.copy()
+        expected=0
+        result=massimi_locali(lista_mod)
+        msg=self.errormsgmodlista(lista_orig,lista_mod)
+        self.assertEqual(lista_orig,lista_mod,msg=msg)
+    
+    def test_lista_vuota(self):
+        lista_orig=[]
+        lista_mod=lista_orig.copy()
         expected=[]
-        result=unione(lista1,lista2)
-        msg=self.errormsg(lista1,lista2,expected,result)
+        result=massimi_locali(lista_mod)
+        msg=self.errormsg(lista_orig,expected,result)
         self.assertEqual(expected,result,msg=msg)
 
-    def test_lista_singleton(self):
-        lista1=[5]
-        lista2=[5]
-        expected=[5]
-        result=unione(lista1,lista2)
-        msg=self.errormsg(lista1,lista2,expected,result)
+    def test_lista_unitaria(self):
+        lista_orig=[3]
+        lista_mod=lista_orig.copy()
+        expected=[]
+        result=massimi_locali(lista_mod)
+        msg=self.errormsg(lista_orig,expected,result)
+        self.assertEqual(expected,result,msg=msg)
+    
+    def test_lista_lunghezza_due(self):
+        lista_orig=[3, 6]
+        lista_mod=lista_orig.copy()
+        expected=[]
+        result=massimi_locali(lista_mod)
+        msg=self.errormsg(lista_orig,expected,result)
         self.assertEqual(expected,result,msg=msg)
 
-    def test_liste_disgiunte(self):
-        lista1=[7, 1]
-        lista2=[8, 12]
-        expected=[7,1,8,12].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
+    def test_tre_elementi_senza_massimi(self):
+        lista_orig=[3, 6, 6]
+        lista_mod=lista_orig.copy()
+        expected=[]
+        result=massimi_locali(lista_mod)
+        msg=self.errormsg(lista_orig,expected,result)
         self.assertEqual(expected,result,msg=msg)
-
-    def test_liste_permutate(self):
-        lista1=[8, 6, 4, 5, 2]
-        lista2=[2, 5, 6, 4, 8]
-        expected=[2, 5, 6, 4, 8].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
+    
+    def test_tre_elementi_con_massimo(self):
+        lista_orig=[3, 6, 5]
+        lista_mod=lista_orig.copy()
+        expected=[6]
+        result=massimi_locali(lista_mod)
+        msg=self.errormsg(lista_orig,expected,result)
         self.assertEqual(expected,result,msg=msg)
-
-    def test_liste_qualsiasi(self):
-        lista1=[8, 1, 4, 5, 2]
-        lista2=[2, 5, 6, 4, 18]
-        expected=[8, 1, 4, 5, 2, 6, 18].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
+    
+    def test_piu_elementi_con_massimi(self):
+        lista_orig=[9, 3, 6, 5, 8, 2, 7]
+        lista_mod=lista_orig.copy()
+        expected=[6, 8]
+        result=massimi_locali(lista_mod)
+        msg=self.errormsg(lista_orig,expected,result)
         self.assertEqual(expected,result,msg=msg)
-
-    def test_lista1_in_lista2(self):
-        lista1=[8, 1, 4]
-        lista2=[2, 4, 8, 18, 1]
-        expected=[2, 4, 8, 18, 1].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
-        self.assertEqual(expected,result,msg=msg)
-
-    def test_lista2_in_lista1(self):
-        lista1=[2, 4, 8, 18, 1]
-        lista2=[8, 1, 4]
-        expected=[2, 4, 8, 18, 1].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
-        self.assertEqual(expected,result,msg=msg)
-
-    def test_non_lista_prima(self):
-        lista1=1000
-        lista2=[8, 4]
+    
+    def test_non_lista(self):
+        lista_orig=45
         messaggio = """
 
 MOTIVO DEL FALLIMENTO:
-    La funzione unione su input {0} e {1} dovrebbe sollevare
-    'TypeError' perché accetta solo liste come argomento."""
-        messaggio = messaggio.format(repr(lista1),repr(lista2))
+    La funzione massimi_locali su input {0} dovrebbe sollevare
+    'TypeError' perché accetta solo una lista come argomento."""
+        messaggio = messaggio.format(repr(lista_orig))
         with self.assertRaises(TypeError,msg=messaggio):
-            unione(lista1,lista2)
-
-    def test_non_lista_seconda(self):
-        lista1=[8, 4]
-        lista2=451
+            massimi_locali(lista_orig)
+       
+    def test_lista_non_numerica(self):
+        lista_orig=[23,"parola",12]
         messaggio = """
 
 MOTIVO DEL FALLIMENTO:
-    La funzione unione su input {0} e {1} dovrebbe sollevare
-    'TypeError' perché accetta solo liste come argomento."""
-        messaggio = messaggio.format(repr(lista1),repr(lista2))
+    La funzione massimi_locali su input {0} dovrebbe sollevare
+    'TypeError' perché accetta solo una lista di numeri come argomento."""
+        messaggio = messaggio.format(repr(lista_orig))
         with self.assertRaises(TypeError,msg=messaggio):
-            unione(lista1,lista2)
-
+            massimi_locali(lista_orig)
+        
 
 if __name__ == '__main__':
     unittest.main()

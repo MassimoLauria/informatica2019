@@ -45,5 +45,6 @@ che viene prodotto e pubblicato.
   | Laboratorio 4 | [[file:docs/lab04.pdf][scarica]] |
   | Laboratorio 5 | [[file:docs/lab05.pdf][scarica]] |
   | Laboratorio 6 | [[file:docs/lab06.pdf][scarica]] |
+  | Laboratorio 7 | [[file:docs/lab07.pdf][scarica]] |
   |---------------+---------|
   

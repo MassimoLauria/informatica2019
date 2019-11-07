@@ -14,8 +14,8 @@ anche se non capite tutte le informazioni prodotte da questo
 programma, leggete quelle che capite perché vi possono aiutare nello
 svolgimento degli esercizi.
 """
-ex_name      ='lab06unione'
-ex_functions =['unione'] 
+ex_name      ='lab07crealista'
+ex_functions =['crea_lista'] 
 
 
 #---------------------------------------------------
@@ -97,98 +97,74 @@ else:
 from pprint import pformat
 
 
-class TestLab06Unione(unittest.TestCase):
+class TestLab7(unittest.TestCase):
 
-    def errormsg(self,lista1,lista2,expected,result):
+    def errormsg(self,a,b,expected,result):
         messaggio = """
 
 MOTIVO DEL FALLIMENTO:
-    Il risultato sulle liste {0} e {1} dovrebbe essere {2}, invece il programma 
+    La lista creata con parametri {0} e {1} dovrebbe essere {2}, invece il programma 
     restituisce {3}"""
-        messaggio = messaggio.format(lista1,lista2,expected,result)
+        messaggio = messaggio.format(a,b,expected,result)
         return messaggio
     
-    def test_liste_vuote(self):
-        lista1=[]
-        lista2=[]
+    def test_lunghezza_zero(self):
+        a=10
+        b=0
         expected=[]
-        result=unione(lista1,lista2)
-        msg=self.errormsg(lista1,lista2,expected,result)
+        result=crea_lista(a,b)
+        msg=self.errormsg(a,b,expected,result)
+        self.assertEqual(expected,result,msg=msg)
+    
+    def test_liste_lunghezza_uno(self):
+        a=10
+        b=1
+        expected=[10]
+        result=crea_lista(a,b)
+        msg=self.errormsg(a,b,expected,result)
         self.assertEqual(expected,result,msg=msg)
 
-    def test_lista_singleton(self):
-        lista1=[5]
-        lista2=[5]
-        expected=[5]
-        result=unione(lista1,lista2)
-        msg=self.errormsg(lista1,lista2,expected,result)
+    def test_lista_lunga(self):
+        a=20
+        b=5
+        expected=[20,21,22,23,24]
+        result=crea_lista(a,b)
+        msg=self.errormsg(a,b,expected,result)
         self.assertEqual(expected,result,msg=msg)
 
-    def test_liste_disgiunte(self):
-        lista1=[7, 1]
-        lista2=[8, 12]
-        expected=[7,1,8,12].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
+    def test_primo_negativo(self):
+        a=-4
+        b=6
+        expected=[-4,-3,-2,-1,0,1]
+        result=crea_lista(a,b)
+        msg=self.errormsg(a,b,expected,result)
         self.assertEqual(expected,result,msg=msg)
 
-    def test_liste_permutate(self):
-        lista1=[8, 6, 4, 5, 2]
-        lista2=[2, 5, 6, 4, 8]
-        expected=[2, 5, 6, 4, 8].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
-        self.assertEqual(expected,result,msg=msg)
-
-    def test_liste_qualsiasi(self):
-        lista1=[8, 1, 4, 5, 2]
-        lista2=[2, 5, 6, 4, 18]
-        expected=[8, 1, 4, 5, 2, 6, 18].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
-        self.assertEqual(expected,result,msg=msg)
-
-    def test_lista1_in_lista2(self):
-        lista1=[8, 1, 4]
-        lista2=[2, 4, 8, 18, 1]
-        expected=[2, 4, 8, 18, 1].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
-        self.assertEqual(expected,result,msg=msg)
-
-    def test_lista2_in_lista1(self):
-        lista1=[2, 4, 8, 18, 1]
-        lista2=[8, 1, 4]
-        expected=[2, 4, 8, 18, 1].sort()
-        result=unione(lista1,lista2).sort()
-        msg=self.errormsg(lista1,lista2,expected,result)
-        self.assertEqual(expected,result,msg=msg)
-
-    def test_non_lista_prima(self):
-        lista1=1000
-        lista2=[8, 4]
+    def test_primo_non_numero(self):
+        a="pippo"
+        b=4
         messaggio = """
 
 MOTIVO DEL FALLIMENTO:
-    La funzione unione su input {0} e {1} dovrebbe sollevare
-    'TypeError' perché accetta solo liste come argomento."""
-        messaggio = messaggio.format(repr(lista1),repr(lista2))
+    La funzione crea_lista su input {0} e {1} dovrebbe sollevare
+    'TypeError' perché accetta solo numeri come argomenti."""
+        messaggio = messaggio.format(repr(a), repr(b))
         with self.assertRaises(TypeError,msg=messaggio):
-            unione(lista1,lista2)
+            crea_lista(a,b)
 
-    def test_non_lista_seconda(self):
-        lista1=[8, 4]
-        lista2=451
+    def test_secondo_non_naturale(self):
+        a=25
+        b=-5
         messaggio = """
 
 MOTIVO DEL FALLIMENTO:
-    La funzione unione su input {0} e {1} dovrebbe sollevare
-    'TypeError' perché accetta solo liste come argomento."""
-        messaggio = messaggio.format(repr(lista1),repr(lista2))
-        with self.assertRaises(TypeError,msg=messaggio):
-            unione(lista1,lista2)
+    La funzione crea_lista su input {0} e {1} dovrebbe sollevare
+    'ValueError' perché accetta solo liste contenenti numeri come argomento."""
+        messaggio = messaggio.format(repr(a), repr(b))
+        with self.assertRaises(ValueError,msg=messaggio):
+            crea_lista(a,b)        
 
-
+        
 if __name__ == '__main__':
     unittest.main()
                               
