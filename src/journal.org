@@ -3,6 +3,20 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+
+* <2019-11-20 mer> Lezione 16 - Algoritmi di ricerca 
+
+  Introduciamo lo studio sistematico  degli algoritmi, e discutiamo di
+  algoritmi di  ricerca. Utilizzeremo come  esempio la ricerca  di uno
+  zero (approssimato) in  una funzione continua, e  poi passeremo agli
+  algoritmi di ricerca su sequenze:
+  - ricerca sequenziale su sequenze generiche;
+  - ricerca binaria su sequenze ordinate.
+
+  *Materiale didattico*: Capitoli 1 e 2 degli Appunti.
+
+  *Lavoro assegnato*: leggere il capitolo 3 degli Appunti.
+
 * <2019-11-18 Mon> Laboratorio 7
 
   Esercitazione da fare in laboratorio: [[file:docs/lab07.pdf][scarica]].
@@ -15,10 +29,13 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
    | Azzera elementi negativi     | [[file:code/test_lab07azzeranegativi.py][test_lab07azzeranegativi.py]]    |
    | Posizione del minimo         | [[file:code/test_lab07minimo.py][test_lab07minimo.py]]            |
    | Massimi locali               | [[file:code/test_lab07massimilocali.py][test_lab07massimilocali.py]]     |
+   | Sequenza bitonica            | [[file:code/test_lab07bitonica.py][test_lab07bitonica.py]]     |
    |------------------------------+--------------------------------|
   
   Man mano che  lavorate sui vostri esercizi potete  testare le vostre
   soluzioni eseguendo i file di test corrispondenti.
+
+  *Lavoro assegnato*: leggere Capitoli 1 e 2.
 
 * <2019-11-07 gio> Lezione 15 - Funzioni ricorsive
 
