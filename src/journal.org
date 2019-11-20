@@ -3,6 +3,17 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-11-21 gio> Lezione 17 - Insertion sort
+
+  Vediamo il nostro primo  algoritmo di ordinamento, l'Insertion sort,
+  e  ne  discutiamo   caratteristiche  e  complessità  computazionale.
+  Se avanza tempo cominciamo a discutere anche la notazione asintotica
+  per   esprimere  in   maniera  sintetica   la  crescita   asintotica
+  della complessità.
+
+  *Materiale didattico*: capitolo 3 e 4 degli Appunti.
+  
+  *Lavoro assegnato*: leggere il capitolo 4 degli Appunti.
 
 * <2019-11-20 mer> Lezione 16 - Algoritmi di ricerca 
 
@@ -13,7 +24,7 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   - ricerca sequenziale su sequenze generiche;
   - ricerca binaria su sequenze ordinate.
 
-  *Materiale didattico*: Capitoli 1 e 2 degli Appunti.
+  *Materiale didattico*: capitoli 1 e 2 degli Appunti.
 
   *Lavoro assegnato*: leggere il capitolo 3 degli Appunti.
 
