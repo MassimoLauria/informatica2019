@@ -3,6 +3,27 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-11-25 Mon> Laboratorio 8
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab08.pdf][scarica]].
+
+   |------------------------+------------------------|
+   | Esercizio              | file di test           |
+   |------------------------+------------------------|
+   | Somma delle celle      | [[file:code/test_lab08somma.py][test_lab08somma.py]]     |
+   | Minimo della matrice   | [[file:code/test_lab08min.py][test_lab08min.py]]       |
+   | Posizione del massimo  | [[file:code/test_lab08posmax.py][test_lab08posmax.py]]    |
+   | Somma della diagonale  | [[file:code/test_lab08diagonale.py][test_lab08diagonale.py]] |
+   | Somma per righe        | [[file:code/test_lab08righe.py][test_lab08righe.py]]     |
+   | Somma per colonne      | [[file:code/test_lab08colonne.py][test_lab08colonne.py]]   |
+   | Riga con somma massima | [[file:code/test_lab08maxriga.py][test_lab08maxriga.py]]   |
+   |------------------------+------------------------|
+  
+  Man mano che  lavorate sui vostri esercizi potete  testare le vostre
+  soluzioni eseguendo i file di test corrispondenti.
+
+  *Lavoro assegnato*: leggere Capitoli 4 e 5.
+
 * <2019-11-21 gio> Lezione 17 - Insertion sort
 
   Vediamo il nostro primo  algoritmo di ordinamento, l'Insertion sort,
