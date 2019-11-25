@@ -3,6 +3,19 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-11-27 mer> Lezione 18 - Notazioni $\Omega$ e $\Theta$, e Bubblesort
+
+  Concludiamo con  le notazioni  asintotiche. Alla lezione  17 abbiamo
+  visto la  notazione $O$,  e in questa  lezione vediamo  le notazioni
+  $\Omega$ e $\Theta$.
+
+  Vediamo un altro algoritmo di ordinamento di complessità quadratica,
+  il Bubblesort.
+
+  *Materiale didattico*: capitolo 4 e 5 degli Appunti.
+  
+  *Lavoro assegnato*: leggere il capitolo 6 degli Appunti.
+
 * <2019-11-25 Mon> Laboratorio 8
 
   Esercitazione da fare in laboratorio: [[file:docs/lab08.pdf][scarica]].
@@ -24,7 +37,7 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
   *Lavoro assegnato*: leggere Capitoli 4 e 5.
 
-* <2019-11-21 gio> Lezione 17 - Insertion sort
+* <2019-11-21 gio> Lezione 17 - Insertion sort e Notazione $O$
 
   Vediamo il nostro primo  algoritmo di ordinamento, l'Insertion sort,
   e  ne  discutiamo   caratteristiche  e  complessità  computazionale.
