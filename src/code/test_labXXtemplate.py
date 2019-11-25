@@ -13,17 +13,6 @@ import unittest
 import sys
 from collections import namedtuple
 
-# Struttura dati per i casi di test
-#
-#   name   - nome del test
-#   fname  - nome della funzione da testare
-#   input  - tupla contenente gli argomenti della funzione per il test
-#   result - valore atteso
-#   error  - errore atteso
-#   explanation - spiegazione dell'errore (opzionale)
-#
-#   almeno uno tra 'result' e 'error' deve essere non nullo.
-
 Testcase = namedtuple('Testcase', 'name fname input result error explanation')
 Testcase.__new__.__defaults__ = (None,) * len(Testcase._fields)
 
@@ -71,6 +60,36 @@ Sistemate il file delle soluzioni e rieseguite i test.
 
 
 def load_solution_file(filename_woext, functions):
+    """Carica il file delle soluzioni
+
+    Importa il modulo `filename_woext`, assumendo che sia nella
+    cartella corrente, e da esse carica le funzioni elencate
+    `functions` nel global namespace.
+
+    Parameters
+    ----------
+    filename_woext : str
+        Nome del modulo da caricare (senza estensione .py)
+
+    functions: str or list(str)
+        Lista di nomi di funzione da caricare nel modulo.
+        Se l'argomento non è una lista ma una stringa, viene
+        interpretata come una lista che contiene quel nome come
+        unico elemento.
+
+    """
+    if not isinstance(filename_woext, str):
+       print("ERRORE NEL FILE DI TEST: il nome del file delle soluzioni non è valido.")
+       sys.exit(-1)
+
+    if isinstance(functions,str):
+        functions = [functions]
+
+    for s in functions:
+        if not isinstance(s, str):
+            print("ERRORE NEL FILE DI TEST: il nome del file delle soluzioni non è valido.")
+            sys.exit(-1)
+
 
     # Stampa un'intestazione che descrive l'esercizio
     lista_delle_funzioni = "\n".join("  - "+f for f in functions)
@@ -135,7 +154,7 @@ MOTIVO DEL FALLIMENTO del test '{0}' per la funzione '{1}':""".format(testcase.n
     La funzione sui parametri {} dovrebbe sollevare '{}'""".format(repr(testcase.input), str(testcase.error))
 
     else:
-        raise ValueError("Il test {} non contiene né il campo 'error' né il campo 'result'")
+        raise ValueError("Il test {} non contiene né il campo 'error' né il campo 'result'".format(testcase.name))
 
     if testcase.explanation is None:
         messaggio3 = ''
@@ -145,12 +164,27 @@ MOTIVO DEL FALLIMENTO del test '{0}' per la funzione '{1}':""".format(testcase.n
     return messaggio1+messaggio2+messaggio3
 
 
-def generate_test_function(testcase):
+def generate_test_function(testcase, default_fname=None):
+
+    if testcase.fname is not None:
+        fname = testcase.fname
+    elif default_fname is not None:
+        fname = default_fname
+    else:
+        raise AttributeError("'{}' non contiene il campo 'fname', "
+                             "né è specificato un valore predefinito.".format(testcase.name))
+
+    if testcase.input is None:
+        raise AttributeError("'{}' non contiene il campo 'input', che è necessario.".format(testcase.name))
+
+    if testcase.result is not None and testcase.error is not None:
+        raise AttributeError("'{}' contiene sia il campo 'result', sia il campo 'error'.".format(testcase.name))
+
     if testcase.result is not None:
         # Creation of the test method for computation
         def tmp_test_function(self):
 
-            func = globals()[testcase.fname]
+            func = globals()[fname]
 
             computed = func(*testcase.input)   # executes the test
 
@@ -162,52 +196,123 @@ def generate_test_function(testcase):
         # Creation of the test method for error signaling
         def tmp_test_function(self):
 
-            func = globals()[testcase.fname]
+            func = globals()[fname]
             msg = error_msg(testcase)
 
             with self.assertRaises(testcase.error, msg=msg):
                 func(*testcase.input)   # executes the test
     else:
-        raise ValueError("Il test {} non contiene né il campo 'error' né il campo 'result'")
+        raise ValueError("'{}' non contiene né il campo 'error' né il campo 'result'".format(testcase.name))
 
     return tmp_test_function
 
 
-def populate_test_class(testclass, testcases):
-    for testcase in testcases:
-        test_name = 'test_' + "".join(testcase.name.split())
-        setattr(testclass, test_name, generate_test_function(testcase))
+def populate_test_class(testclass, testcases, default_fname=None):
+    """Aggiunge ad una classe un metodo per ogni test
 
+    La suite di test di unità di Python esegue i test che
+    corrispondono ai metodi test_* trovati nelle classi che ereditano
+    da `unittest.TestCase`.
+
+    Questa funzione converte una sequenza di record che rappresenta
+    una batteria di test in metodi di di una classe.
+
+    Parameters
+    ----------
+    testclass : class
+        La classe su cui vengono caricati i metodi.
+
+    testcases: list(Testcase)
+        Lista dei casi di test da caricare.
+
+    default_fname: str
+        funzione da testare, quando non specificata dai casi di test.
+        Se un caso di test non specifica il nome della funzione da
+        testare, viene usato invece il nome predefinito. Se né il test
+        né questo parametro indicano un nome di funzione, viene
+        sollevato errore. (default: None)
+    """
+
+    errori_nei_test = []
+
+    for i, testcase in enumerate(testcases, start=1):
+
+        try:
+            if testcase.name is None:
+                raise AttributeError("il test non contiene il campo 'name', che è necessario".format(i))
+
+            test_name = 'test_' + "".join(testcase.name.split())
+            if hasattr(testclass, test_name):
+                raise ValueError("nome del metodo di test '{}'" \
+                                 " è duplicato nella classe '{}'".format(test_name, testclass.__name__))
+
+            setattr(testclass,
+                    test_name,
+                    generate_test_function(testcase, default_fname=default_fname))
+
+        except (ValueError, AttributeError) as err:
+            errori_nei_test.append((i,err))
+
+    if len(errori_nei_test)>0:
+        print("ERRORE NEI CASI DI TEST:")
+        for i,err in errori_nei_test:
+            print("  [{}] - {}".format(i,err))
+        sys.exit(-1)
 
 # ------------------------- INIZIA A SCRIVERE QUI --------------------------
-class TestLab08SommaMat(unittest.TestCase):
-    pass
 
-somma_mat_tests = [
-    Testcase(name="somma matrice 1 x 1", fname='somma_mat', input=([[3]], ), result=3),
+# Struttura dati 'Testcase' per i casi di test
+#
+#   name   - nome del test
+#   fname  - nome della funzione da testare (opzionale, vedi sotto)
+#   input  - tupla contenente gli argomenti della funzione per il test
+#   result - valore atteso
+#   error  - errore atteso
+#   explanation - spiegazione dell'errore (opzionale)
+#
+#   REQUISITI:
+#       - 'name' e 'input' sono campi necessari;
+#       - 'fname' è necessario se non viene fornito un default in 'populate_test_class'
+#       - deve essere presente esattamente uno dei campi 'result' e 'error';
+#       - non ci possono essere due test con nomi uguali (a meno di spazi).
 
-    Testcase(name="somma matrice 3 x 2", fname='somma_mat', input=([[3, 1], [8, -2], [4, -5]],), result=9),
 
-    Testcase(name="somma matrice 2 x 3", fname='somma_mat', input=([[3, 1, 5], [8, -2, -1]], ),  result=14),
+esercizio_file = 'labXXsomma'
+esercizio_funzione = 'somma_mat'
 
-    Testcase(name="lista non matrice",  fname='somma_mat', input=([3,4],), error=TypeError,
+casi_di_test = [
+    Testcase(name="somma matrice 1 x 1", input=([[3]], ), result=3),
+
+    Testcase(name="somma matrice 3 x 2", input=([[3, 1], [8, -2], [4, -5]],), result=9),
+
+    Testcase(name="somma matrice 2 x 3", input=([[3, 1, 5], [8, -2, -1]], ),  result=14),
+
+    Testcase(name="lista non matrice",  input=([3,4],), error=TypeError,
              explanation="una matrice è una lista di liste, non una lista di numeri"),
 
-    Testcase(name="numero non matrice", fname='somma_mat', input=(4,),     error=TypeError,
+    Testcase(name="numero non matrice", input=(4,),     error=TypeError,
              explanation="una matrice è una lista di liste, non un numero"),
 
     Testcase(name="matrice non numerica",
-             fname='somma_mat',
              input=([[3, 5, 6], [3, "pippo", 6]],),
              error=TypeError,
              explanation="la matrice deve contenere solo numeri")
 ]
 
 
+class TestLabInformatica(unittest.TestCase):
+    pass
+
+
 if __name__ == '__main__':
 
-    load_solution_file('prova',['somma_mat'])
+    # Gli errori generati qui sono colpa del docente
+    populate_test_class(TestLabInformatica,
+                        casi_di_test,
+                        default_fname=esercizio_funzione)
 
-    populate_test_class(TestLab08SommaMat, somma_mat_tests)
+    # Importa le soluzioni degli studenti e segnala eventuali problemi
+    load_solution_file(esercizio_file, esercizio_funzione)
 
+    # Testa le soluzioni degli studenti e segnala eventuali errori
     unittest.main()
