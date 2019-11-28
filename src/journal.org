@@ -3,6 +3,27 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-12-02 lun> Laboratorio 9
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab09.pdf][scarica]].
+
+   |----------------------+------------------------------|
+   | Esercizio            | file di test                 |
+   |----------------------+------------------------------|
+   | Medie mobili         | [[file:code/test_lab09mediemobili.py][test_lab09mediemobili.py]]     |
+   | Media mobile massima | [[file:code/test_lab09posmaxmm.py][test_lab09posmaxmm.py]]        |
+   | Verifica matrice     | [[file:code/test_lab09verificamatrice.py][test_lab09verificamatrice.py]] |
+   | Creazione matrice    | [[file:code/test_lab09creamatrice.py][test_lab09creamatrice.py]]     |
+   | Trasposta            | [[file:code/test_lab09trasposta.py][test_lab09trasposta.py]]       |
+   | Righe crescenti      | [[file:code/test_lab09righecrescenti.py][test_lab09righecrescenti.py]]  |
+   | Punto di sella       | [[file:code/test_lab09sella.py][test_lab09sella.py]]           |
+   |----------------------+------------------------------|
+  
+  Man mano che  lavorate sui vostri esercizi potete  testare le vostre
+  soluzioni eseguendo i file di test corrispondenti.
+
+  *Lavoro assegnato*: leggere il Capitolo 9 degli Appunti.
+
 * <2019-11-28 gio> Lezione 19 - Ordinamenti per confronti
 
   Gli  algoritmi  di   ordinamento  visti  fino  ad   ora  sono  tutti

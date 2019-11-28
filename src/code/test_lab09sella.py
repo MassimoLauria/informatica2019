@@ -14,14 +14,14 @@ import sys
 from collections import namedtuple
 from copy import deepcopy
 
-class TcUndef:
+class TestcaseUndef:
     pass
 
 Testcase = namedtuple('Testcase',
                       " name fname input "
                       " result error inplace "
                       " explanation")
-Testcase.__new__.__defaults__ = (TcUndef,) * len(Testcase._fields)
+Testcase.__new__.__defaults__ = (TestcaseUndef,) * len(Testcase._fields)
 
 headertext = """
 *********************************************************************
@@ -146,29 +146,29 @@ def load_solution_file(filename_woext, functions):
 
 
 
-def error_msg(testcase, computed=TcUndef, backup=TcUndef):
+def error_msg(testcase, computed=TestcaseUndef, backup=TestcaseUndef):
     messaggio1 = """
 
 MOTIVO DEL FALLIMENTO del test '{0}' per la funzione '{1}':""".format(testcase.name, testcase.fname)
 
-    if testcase.result is not TcUndef:
+    if testcase.result is not TestcaseUndef:
         messaggio2 = """
     Il risultato che è stato calcolato con i parametri {0} è {2}, mentre invece
     dovrebbe essere {1}""".format(repr(testcase.input), testcase.result, computed)
 
-    elif testcase.inplace is not TcUndef:
+    elif testcase.inplace is not TestcaseUndef:
         messaggio2 = """
     La funzione doveva modificare l'input {0} in {1}, e 
     invece ha prodotto {2}""".format(repr(backup), repr(testcase.inplace), repr(testcase.input))
 
-    elif testcase.error is not TcUndef:
+    elif testcase.error is not TestcaseUndef:
         messaggio2 = """
     La funzione sui parametri {} dovrebbe sollevare '{}'""".format(repr(testcase.input), str(testcase.error))
 
     else:
         raise ValueError("Il test {} non contiene né 'error', né 'result', né 'inplace'".format(testcase.name))
 
-    if testcase.explanation is TcUndef:
+    if testcase.explanation is TestcaseUndef:
         messaggio3 = ''
     else:
         messaggio3 = ", perché {}".format(testcase.explanation)
@@ -178,28 +178,28 @@ MOTIVO DEL FALLIMENTO del test '{0}' per la funzione '{1}':""".format(testcase.n
 
 def generate_test_function(testcase):
 
-    if testcase.fname is TcUndef:
+    if testcase.fname is TestcaseUndef:
         raise AttributeError("'{}' non contiene il campo 'fname', "
                              "che è necessario.".format(testcase.name))
 
-    if testcase.input is TcUndef:
+    if testcase.input is TestcaseUndef:
         raise AttributeError("'{}' non contiene il campo 'input', che è necessario.".format(testcase.name))
 
     # Checking that only one field among 'result', 'error', 'inplace'
     # is defined.
     behaviours = 0
-    if testcase.result is not TcUndef:
+    if testcase.result is not TestcaseUndef:
         behaviours += 1
-    if testcase.error is not TcUndef:
+    if testcase.error is not TestcaseUndef:
         behaviours += 1
-    if testcase.inplace is not TcUndef:
+    if testcase.inplace is not TestcaseUndef:
         behaviours += 1
         
     if behaviours != 1:
         raise AttributeError("'{}' deve avere esattamente un campo tra "
                              "'result', 'error', 'inplace'.".format(testcase.name))
 
-    if testcase.result is not TcUndef:
+    if testcase.result is not TestcaseUndef:
         # Test whether result is correct
         def tmp_test_function(self):
 
@@ -212,7 +212,7 @@ def generate_test_function(testcase):
             else:
                 self.assertEqual(testcase.result, computed, msg=msg)
                 
-    elif testcase.inplace is not TcUndef:
+    elif testcase.inplace is not TestcaseUndef:
         # Test whether input was modified appropriately
         def tmp_test_function(self):
 
@@ -223,7 +223,7 @@ def generate_test_function(testcase):
 
             self.assertEqual(testcase.inplace, testcase.input, msg=msg)
 
-    elif testcase.error is not TcUndef:
+    elif testcase.error is not TestcaseUndef:
         # Test for error signaling
         def tmp_test_function(self):
 
@@ -269,7 +269,7 @@ def populate_test_class(testclass, testcases, default_fname=None):
     for i, testcase in enumerate(testcases, start=1):
 
         try:
-            if testcase.name is TcUndef:
+            if testcase.name is TestcaseUndef:
                 raise AttributeError("il test non contiene il campo 'name', che è necessario".format(i))
 
             test_name = 'test_' + "".join(testcase.name.split())
@@ -309,37 +309,42 @@ def populate_test_class(testclass, testcases, default_fname=None):
 #       - non ci possono essere due test con nomi uguali (a meno di spazi).
 
 
-esercizio_file = 'lab09incrementa'
-esercizio_funzione = 'incrementa'
+esercizio_file = 'lab09sella'
+esercizio_funzione = 'punto_di_sella'
 
 casi_di_test = [
-    Testcase(name="nessuna riga",  input=([],3), error=TypeError,
+    Testcase(name="nessuna riga",  input=([],), error=TypeError,
              explanation="la matrice deve avere almeno una riga"),
 
     Testcase(name="primo elemento non lista",
-             input=([56, [3, 5, "pippo", 8, 6], [3]], 2),
+             input=([56, [3, 5, "pippo", 8, 6], [3]]),
              error=TypeError,
              explanation="il primo elemento della lista non è una lista"),
 
     Testcase(name="un elemento non lista",
-             input=([[56], "pluto", [3]], 4),
+             input=([[56], "pluto", [3]]),
              error=TypeError,
              explanation="un elemento della lista non è una lista"),
+             
+    Testcase(name="matrice 1 x 1", input=([[3]],), result=(0,0)),
 
-    Testcase(name="elemento non numerico", input=(
-        [[9, 4,16,10, 4],
-         [2, 5, 7, "pippo", 2],
-         [8,12,13, 9, 1]], 5), error=TypeError),
+    Testcase(name="matrice 1 x n con massimo", input=([[3, 10, -1]],), result=(0,1)),
 
-    Testcase(name="incremento",
-             input=(
-                 [[9, 4,16,10, 4],
-                  [2, 5, 7, 6, 2],
-                  [8,12,13, 9, 1]], -2),
-             inplace=(
-                 [[7, 2,14, 8, 2],
-                  [0, 3, 5, 4, 0],
-                  [6,10,11, 7, -1]], -2)),
+    Testcase(name="matrice 1 x n senza massimo", input=([[3, 10, 10]],), result=None),
+
+    Testcase(name="matrice n x 1 con minimo", input=([[3], [10], [-1]],), result=(2,0)),
+
+    Testcase(name="matrice n x 1 senza minimo", input=([[-1], [10], [-1]],), result=None),
+
+    Testcase(name="matrice con punto di sella", input=(
+[[9, 4,16,10, 4],
+[2, 5, 7, 6, 2],
+[8,12,13, 9, 1]],), result=(1,2)),
+
+    Testcase(name="matrice senza punto di sella", input=(
+[[9, 4,16,10, 4],
+[2, 5, 7, 6, 2],
+ [8,12, 5, 9, 1]],), result=None)
 ]
 
 
@@ -353,7 +358,7 @@ if __name__ == '__main__':
     # Inseriamo il nome della funzione di default, quando non presente
     for i in range(len(casi_di_test)):
         tc = casi_di_test[i]
-        if tc.fname is TcUndef:
+        if tc.fname is TestcaseUndef:
             casi_di_test[i] = tc._replace(fname=esercizio_funzione)
 
     # Gli errori generati qui sono colpa del docente
