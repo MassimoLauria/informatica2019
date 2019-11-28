@@ -8,11 +8,19 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   L'esame sarà costituito da due prove, 
 
   - prova scritta 
-  - esercizi di programmazione
+  - prova pratica di programmazione
 
   e per  completare l'esame  sarà necessario  ottenere in  entrambe un
   voto non  inferiore a 18. Il  voto finale dell'esame sarà  una media
-  pesata del voto delle due prove. Non ci saranno esoneri.
+  artimetica  del  voto  delle  due prove.  Non  ci  saranno  esoneri.
+  La prova pratica di programmazione  Python verrà svolta al computer,
+  secondo  modalità  molto  simili  a  quelle  utilizzate  durante  le
+  esercitazioni di laboratorio. Si consiglia di esercitarsi alla prova
+  con le stesse modalità  descritte nelle esercitazioni di Laboratorio
+  6, 7, 8, 9 e seguenti, utilizzando i file di test.
+
+  Un eventuale colloquio orale è a discrezione del docente.
+
 
   #+BEGIN_CENTER
   |---------+-----------+---------------+------------+------------------------|
@@ -27,7 +35,8 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   #+END_CENTER
   
   In ogni  data verranno svolte  entrambe le prove, secondo  un orario
-  che va ancora finalizzato. Ad esempio:
+  che va ancora  finalizzato, a seconda del numero di  studenti che si
+  presenteranno. Ad esempio:
 
   - prova scritta: dalle ore 9.00 alle 11.00
   - prova di programmazione: dalle ore 11.30 alle ore 13.30
