@@ -3,6 +3,13 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-12-04 mer> Lezione 20 - Mergesort
+
+  Vediamo  un  algoritmo  di  ordimanento per  confronti  che  impiega
+  $\Theta(n  \log  n)$  operazioni  per  ordinare  una  lista  di  $n$
+  elementi. Questo  algoritmo quindi è asintoticamente  ottimo, almeno
+  per quanto riguarda gli algoritmi per confronto.
+
 * <2019-12-02 lun> Laboratorio 9
 
   Esercitazione da fare in laboratorio: [[file:docs/lab09.pdf][scarica]].
