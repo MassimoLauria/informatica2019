@@ -238,6 +238,16 @@ def generate_test_function(testcase):
     return tmp_test_function
 
 
+
+def set_default_fname(testcases,fname):
+    """Imposta ``fname'' come nome della funzione, quando questo non è già presente."""
+    for i in range(len(testcases)):
+        tc = testcases[i]
+        if tc.fname is TcUndef:
+            testcases[i] = tc._replace(fname=fname)
+
+
+
 def populate_test_class(testclass, testcases, default_fname=None):
     """Aggiunge ad una classe un metodo per ogni test
 
@@ -351,10 +361,7 @@ class TestLabInformatica(unittest.TestCase):
 if __name__ == '__main__':
 
     # Inseriamo il nome della funzione di default, quando non presente
-    for i in range(len(casi_di_test)):
-        tc = casi_di_test[i]
-        if tc.fname is TcUndef:
-            casi_di_test[i] = tc._replace(fname=esercizio_funzione)
+    set_default_fname(casi_di_test,esercizio_funzione)
 
     # Gli errori generati qui sono colpa del docente
     populate_test_class(TestLabInformatica, casi_di_test)
