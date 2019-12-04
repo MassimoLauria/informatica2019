@@ -108,14 +108,17 @@ def qsort_partition(S, start, end):
     # scansione della lista dall'inizio (pivot escluso) verso il centro
     # e dalla fine verso il centro
     while i<j:
-        while i<j and S[i] < pivot:  # cerca elementi troppo grandi
+        while i<j and S[i] < pivot:  # cerca un elemento grande da sx verso centro
             i += 1
-        while i<j and S[j] >= pivot:   # cerca elementi troppo piccoli
+        while i<j and S[j] >= pivot: # cerca un elemento piccolo da dx verso centro
             j -= 1
         if i<j:  # se ha trovato una coppia da scambiare la scambia
             S[i], S[j] = S[j], S[i]
-    
-    if S[i] > pivot: # decide se il pivot deve andare in posizione i oppure i-1
+
+    # se i ha scavallato tra gli elementi grandi, allora l'ultimo
+    # elemento piccolo (da scambiare col pivot) è in posizione i-1,
+    # altrimenti è in posizione i
+    if S[i] >= pivot:
         i -= 1
     S[start], S[i] = S[i], S[start] # posiziona il pivot al centro
     return i
