@@ -44,7 +44,7 @@
   compilare il questionario OPIS per il corso.
 
   - Istruzioni di compilazione: [[https://www.uniroma1.it/sites/default/files/field_file_allegati/vademecum_opis_proiettare_in_aula_2019-20_12_11_2019.pdf][scarica da qui]].
-  - Codice del corso: =AIBC2PJ=
+  - Codice del corso: =AI5BC2PJ=
 
 
   <2019-10-21  lun> Il  giorno Lunedì  21 Ottobre  il mio  ricevimento

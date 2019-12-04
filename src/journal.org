@@ -3,9 +3,31 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+
+* <2019-12-05 gio> Lezione 21 - Quicksort
+
+  Vediamo l'algoritmo di ordinamento  Quicksort. Questo è un algoritmo
+  *randomizzato*, nel senso che il suo comportamento dipende da scelte
+  casuali  effettuate  durante  l'esecuzione. L'algoritmo  può  essere
+  presentato  naturalmente in  modo  ricorsivo, poiché  basato su  una
+  strategia  divide   et  impera   simile  a  quella   del  Mergesort.
+  Potete  vedere  dei   grafici  ottenuti  misurando  sperimentalmente
+  i tempi di esecuzione su input casuali.
+
+  [[file:images/cmpsort.png]]
+
+  A  lezione,  durante  la  pausa,  viene  proposto  di  compilare  il
+  questionario OPIS per il corso. *Attenzione* il codice mostrato alla
+  lezione  scorsa era  errato. Qui  c'è il  codice aggiornato  (che ho
+  corretto anche nel diario della lezione scorsa).
+
+  - Istruzioni di compilazione: [[https://www.uniroma1.it/sites/default/files/field_file_allegati/vademecum_opis_proiettare_in_aula_2019-20_12_11_2019.pdf][scarica da qui]].
+  - Codice del corso: =AI5BC2PJ=
+
+
 * <2019-12-04 mer> Lezione 20 - Mergesort
 
-  Vediamo  un  algoritmo  di  ordimanento per  confronti  che  impiega
+  Vediamo  un  algoritmo  di  ordinamento per  confronti  che  impiega
   $\Theta(n  \log  n)$  operazioni  per  ordinare  una  lista  di  $n$
   elementi. Questo  algoritmo quindi è asintoticamente  ottimo, almeno
   per quanto riguarda gli algoritmi per confronto.
@@ -14,7 +36,8 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   questionario OPIS per il corso.
 
   - Istruzioni di compilazione: [[https://www.uniroma1.it/sites/default/files/field_file_allegati/vademecum_opis_proiettare_in_aula_2019-20_12_11_2019.pdf][scarica da qui]].
-  - Codice del corso: =AIBC2PJ=
+  - Codice del  corso: =AI5BC2PJ= (*attenzione* in  classe ho mostrato
+    il codice errato)
 
   *Materiale didattico*: capitolo 9 degli Appunti.
 
