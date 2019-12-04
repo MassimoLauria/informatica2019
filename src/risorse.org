@@ -8,6 +8,9 @@ che viene prodotto e pubblicato.
   - [[file:docs/PensareInPython.pdf][Pensare in Python - Come Pensare da Informatico]] di Allen B. Downey
   - [[file:docs/algoritmi.pdf][Appunti su algoritmi e complessità]] di Massimo Lauria
 
+  Alcuni degli algoritmi  spiegati nel corso sono  presenti nel modulo
+  Python [[file:code/algoritmi.py][algoritmi.py]].
+
 * Diapositive 
 
   Le  diapositive, per  argomento,  utilizzate a  lezione. Sul  [[file:journal.org][diario]]
@@ -47,5 +50,6 @@ che viene prodotto e pubblicato.
   | Laboratorio 6 | [[file:docs/lab06.pdf][scarica]] |
   | Laboratorio 7 | [[file:docs/lab07.pdf][scarica]] |
   | Laboratorio 8 | [[file:docs/lab08.pdf][scarica]] |
+  | Laboratorio 9 | [[file:docs/lab09.pdf][scarica]] |
   |---------------+---------|
   

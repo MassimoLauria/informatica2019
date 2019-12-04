@@ -10,6 +10,16 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
   elementi. Questo  algoritmo quindi è asintoticamente  ottimo, almeno
   per quanto riguarda gli algoritmi per confronto.
 
+  A  lezione,  durante  la  pausa,  viene  proposto  di  compilare  il
+  questionario OPIS per il corso.
+
+  - Istruzioni di compilazione: [[https://www.uniroma1.it/sites/default/files/field_file_allegati/vademecum_opis_proiettare_in_aula_2019-20_12_11_2019.pdf][scarica da qui]].
+  - Codice del corso: =AIBC2PJ=
+
+  *Materiale didattico*: capitolo 9 degli Appunti.
+
+  *Lavoro assegnato*: leggere il Capitolo 10 degli Appunti.
+
 * <2019-12-02 lun> Laboratorio 9
 
   Esercitazione da fare in laboratorio: [[file:docs/lab09.pdf][scarica]].
