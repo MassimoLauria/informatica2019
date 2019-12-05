@@ -12,9 +12,16 @@ import importlib
 import unittest
 import sys
 from collections import namedtuple
+from copy import deepcopy
 
-Testcase = namedtuple('Testcase', 'name fname input result error explanation')
-Testcase.__new__.__defaults__ = (None,) * len(Testcase._fields)
+class TcUndef:
+    pass
+
+Testcase = namedtuple('Testcase',
+                      " name fname input "
+                      " result error inplace "
+                      " explanation")
+Testcase.__new__.__defaults__ = (TcUndef,) * len(Testcase._fields)
 
 headertext = """
 *********************************************************************
@@ -139,24 +146,29 @@ def load_solution_file(filename_woext, functions):
 
 
 
-def error_msg(testcase, computed=None):
+def error_msg(testcase, computed=TcUndef, backup=TcUndef):
     messaggio1 = """
 
 MOTIVO DEL FALLIMENTO del test '{0}' per la funzione '{1}':""".format(testcase.name, testcase.fname)
 
-    if testcase.result is not None:
+    if testcase.result is not TcUndef:
         messaggio2 = """
     Il risultato che è stato calcolato con i parametri {0} è {2}, mentre invece
     dovrebbe essere {1}""".format(repr(testcase.input), testcase.result, computed)
 
-    elif testcase.error is not None:
+    elif testcase.inplace is not TcUndef:
+        messaggio2 = """
+    La funzione doveva modificare l'input {0} in {1}, e 
+    invece ha prodotto {2}""".format(repr(backup), repr(testcase.inplace), repr(testcase.input))
+
+    elif testcase.error is not TcUndef:
         messaggio2 = """
     La funzione sui parametri {} dovrebbe sollevare '{}'""".format(repr(testcase.input), str(testcase.error))
 
     else:
-        raise ValueError("Il test {} non contiene né il campo 'error' né il campo 'result'".format(testcase.name))
+        raise ValueError("Il test {} non contiene né 'error', né 'result', né 'inplace'".format(testcase.name))
 
-    if testcase.explanation is None:
+    if testcase.explanation is TcUndef:
         messaggio3 = ''
     else:
         messaggio3 = ", perché {}".format(testcase.explanation)
@@ -164,47 +176,76 @@ MOTIVO DEL FALLIMENTO del test '{0}' per la funzione '{1}':""".format(testcase.n
     return messaggio1+messaggio2+messaggio3
 
 
-def generate_test_function(testcase, default_fname=None):
+def generate_test_function(testcase):
 
-    if testcase.fname is not None:
-        fname = testcase.fname
-    elif default_fname is not None:
-        fname = default_fname
-    else:
+    if testcase.fname is TcUndef:
         raise AttributeError("'{}' non contiene il campo 'fname', "
-                             "né è specificato un valore predefinito.".format(testcase.name))
+                             "che è necessario.".format(testcase.name))
 
-    if testcase.input is None:
+    if testcase.input is TcUndef:
         raise AttributeError("'{}' non contiene il campo 'input', che è necessario.".format(testcase.name))
 
-    if testcase.result is not None and testcase.error is not None:
-        raise AttributeError("'{}' contiene sia il campo 'result', sia il campo 'error'.".format(testcase.name))
+    # Checking that only one field among 'result', 'error', 'inplace'
+    # is defined.
+    behaviours = 0
+    if testcase.result is not TcUndef:
+        behaviours += 1
+    if testcase.error is not TcUndef:
+        behaviours += 1
+    if testcase.inplace is not TcUndef:
+        behaviours += 1
+        
+    if behaviours != 1:
+        raise AttributeError("'{}' deve avere esattamente un campo tra "
+                             "'result', 'error', 'inplace'.".format(testcase.name))
 
-    if testcase.result is not None:
-        # Creation of the test method for computation
+    if testcase.result is not TcUndef:
+        # Test whether result is correct
         def tmp_test_function(self):
 
-            func = globals()[fname]
-
+            func = globals()[testcase.fname]
             computed = func(*testcase.input)   # executes the test
-
             msg = error_msg(testcase, computed)
 
-            self.assertEqual(testcase.result, computed, msg=msg)
-
-    elif testcase.error is not None:
-        # Creation of the test method for error signaling
+            if testcase.result is None:
+                self.assertIsNone(computed, msg=msg)
+            else:
+                self.assertEqual(testcase.result, computed, msg=msg)
+                
+    elif testcase.inplace is not TcUndef:
+        # Test whether input was modified appropriately
         def tmp_test_function(self):
 
-            func = globals()[fname]
+            func = globals()[testcase.fname]
+            input_backup = deepcopy(testcase.input)
+            func(*testcase.input)   # executes the test
+            msg = error_msg(testcase, backup=input_backup)
+
+            self.assertEqual(testcase.inplace, testcase.input, msg=msg)
+
+    elif testcase.error is not TcUndef:
+        # Test for error signaling
+        def tmp_test_function(self):
+
+            func = globals()[testcase.fname]
             msg = error_msg(testcase)
 
             with self.assertRaises(testcase.error, msg=msg):
                 func(*testcase.input)   # executes the test
     else:
-        raise ValueError("'{}' non contiene né il campo 'error' né il campo 'result'".format(testcase.name))
+        raise RuntimeError("'{}' non saremmo dovuti arrivare qui!!!".format(testcase.name))
 
     return tmp_test_function
+
+
+
+def set_default_fname(testcases,fname):
+    """Imposta ``fname'' come nome della funzione, quando questo non è già presente."""
+    for i in range(len(testcases)):
+        tc = testcases[i]
+        if tc.fname is TcUndef:
+            testcases[i] = tc._replace(fname=fname)
+
 
 
 def populate_test_class(testclass, testcases, default_fname=None):
@@ -238,7 +279,7 @@ def populate_test_class(testclass, testcases, default_fname=None):
     for i, testcase in enumerate(testcases, start=1):
 
         try:
-            if testcase.name is None:
+            if testcase.name is TcUndef:
                 raise AttributeError("il test non contiene il campo 'name', che è necessario".format(i))
 
             test_name = 'test_' + "".join(testcase.name.split())
@@ -248,14 +289,14 @@ def populate_test_class(testclass, testcases, default_fname=None):
 
             setattr(testclass,
                     test_name,
-                    generate_test_function(testcase, default_fname=default_fname))
+                    generate_test_function(testcase))
 
         except (ValueError, AttributeError) as err:
             errori_nei_test.append((i,err))
 
     if len(errori_nei_test)>0:
         print("ERRORE NEI CASI DI TEST:")
-        for i,err in errori_nei_test:
+        for i, err in errori_nei_test:
             print("  [{}] - {}".format(i,err))
         sys.exit(-1)
 
@@ -263,21 +304,56 @@ def populate_test_class(testclass, testcases, default_fname=None):
 
 # Struttura dati 'Testcase' per i casi di test
 #
-#   name   - nome del test
-#   fname  - nome della funzione da testare (opzionale, vedi sotto)
-#   input  - tupla contenente gli argomenti della funzione per il test
-#   result - valore atteso
-#   error  - errore atteso
+#   name    - nome del test
+#   fname   - nome della funzione da testare (opzionale, vedi sotto)
+#   input   - tupla contenente gli argomenti della funzione per il test
+#   result  - valore atteso
+#   error   - errore atteso
+#   inplace - modifica attesa dell'input
 #   explanation - spiegazione dell'errore (opzionale)
 #
 #   REQUISITI:
 #       - 'name' e 'input' sono campi necessari;
 #       - 'fname' è necessario se non viene fornito un default in 'populate_test_class'
-#       - deve essere presente esattamente uno dei campi 'result' e 'error';
+#       - deve essere presente esattamente uno 'result', 'error', e 'inplace';
 #       - non ci possono essere due test con nomi uguali (a meno di spazi).
 
 
-esercizio_file = 'labEserc10_6'
+esercizio_file = 'lab09incrementa'
+esercizio_funzione = 'incrementa'
+
+casi_di_test = [
+    Testcase(name="nessuna riga",  input=([],3), error=TypeError,
+             explanation="la matrice deve avere almeno una riga"),
+
+    Testcase(name="primo elemento non lista",
+             input=([56, [3, 5, "pippo", 8, 6], [3]], 2),
+             error=TypeError,
+             explanation="il primo elemento della lista non è una lista"),
+
+    Testcase(name="un elemento non lista",
+             input=([[56], "pluto", [3]], 4),
+             error=TypeError,
+             explanation="un elemento della lista non è una lista"),
+
+    Testcase(name="elemento non numerico", input=(
+        [[9, 4,16,10, 4],
+         [2, 5, 7, "pippo", 2],
+         [8,12,13, 9, 1]], 5), error=TypeError),
+
+    Testcase(name="incremento",
+             input=(
+                 [[9, 4,16,10, 4],
+                  [2, 5, 7, 6, 2],
+                  [8,12,13, 9, 1]], -2),
+             inplace=(
+                 [[7, 2,14, 8, 2],
+                  [0, 3, 5, 4, 0],
+                  [6,10,11, 7, -1]], -2)),
+]
+
+
+esercizio_file = 'lab10parole'
 esercizio_funzione = 'elenco_parole_presenti'
 
 casi_di_test = [
@@ -292,10 +368,11 @@ class TestLabInformatica(unittest.TestCase):
 
 if __name__ == '__main__':
 
+    # Inseriamo il nome della funzione di default, quando non presente
+    set_default_fname(casi_di_test,esercizio_funzione)
+
     # Gli errori generati qui sono colpa del docente
-    populate_test_class(TestLabInformatica,
-                        casi_di_test,
-                        default_fname=esercizio_funzione)
+    populate_test_class(TestLabInformatica, casi_di_test)
 
     # Importa le soluzioni degli studenti e segnala eventuali problemi
     load_solution_file(esercizio_file, esercizio_funzione)
