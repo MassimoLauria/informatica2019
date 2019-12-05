@@ -3,6 +3,25 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-12-09 lun> Laboratorio 10
+
+  Esercitazione da fare in laboratorio: [[file:docs/lab10.pdf][scarica]].
+
+   |---+------------------------+------------------------|
+   |   | Esercizio              | file di test           |
+   |---+------------------------+------------------------|
+   | 1 | Pulizia non alfabetici | [[file:code/test_lab10nonalfa.py][test_lab10nonalfa.py]]   |
+   | 2 | Pulizia maiuscole      | [[file:code/test_lab10maiuscole.py][test_lab10maiuscole.py]] |
+   | 3 | Separazione parole     | [[file:code/test_lab10separa.py][test_lab10separa.py]]    |
+   | 4 | Ordinamento            | [[file:code/test_lab10ordina.py][test_lab10ordina.py]]    |
+   | 5 | Eliminazione doppioni  | [[file:code/test_lab10doppioni.py][test_lab10doppioni.py]]  |
+   | 6 | Tutto insieme          | [[file:code/test_lab10parole.py][test_lab10parole.py]]    |
+   |---+------------------------+------------------------|
+
+  Man mano che  lavorate sui vostri esercizi potete  testare le vostre
+  soluzioni eseguendo i file di test corrispondenti.
+
+  *Lavoro assegnato*: leggere il Capitolo 11 degli Appunti.
 
 * <2019-12-05 gio> Lezione 21 - Quicksort
 
