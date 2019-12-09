@@ -3,6 +3,22 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-12-11 mer> Lezione 22 - Equazioni di ricorrenza
+
+  Vediamo  le equazioni  di  ricorrenza, un  metodo  per esprimere  la
+  complessità computazionale  di funzioni ricorsive.  Queste equazioni
+  vanno  risolte   per  quantificare  effettivamente   la  complessità
+  della funzione. Per farlo vediamo tre metodi:
+
+  - metodo di sostituzione;
+  - metodo iterativo (anche tramite alberi di ricorsione);
+  - Master Theorem.
+  
+  *Materiale didattico*: capitolo 11 degli Appunti.
+
+  *Lavoro assegnato*:   leggere i paragrafi 11.1-11.3  e 14.1-14.4 del
+  libro di testo.
+
 * <2019-12-09 lun> Laboratorio 10
 
   Esercitazione da fare in laboratorio: [[file:docs/lab10.pdf][scarica]].
