@@ -32,6 +32,7 @@ che viene prodotto e pubblicato.
   | Ciclo =while=           | [[file:docs/ciclowhile-slides.pdf][scarica]]                    | [[file:docs/ciclowhile-print.pdf][scarica]]                    |
   | Gestione degli errori   | [[file:docs/gestionerrori-slides.pdf][scarica]]                    | [[file:docs/gestionerrore-print.pdf][scarica]]                    |
   | Codifica dei dati       | [[file:docs/codificadati-slides.pdf][scarica]]                    | [[file:docs/codificadati-print.pdf][scarica]]                    |
+  | Dizionari               | [[file:docs/dizionario-slides.pdf][scarica]]                    | [[file:docs/dizionario-print.pdf][scarica]]                    |
   |-------------------------+----------------------------+----------------------------|
 
 * Esercitazioni di laboratorio

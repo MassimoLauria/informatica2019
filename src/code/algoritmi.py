@@ -35,6 +35,19 @@ def numeriacaso(N,minimo,massimo,ordinati=False):
         seq.sort()
     return seq
 
+def ricerca_binaria(x,seq):
+    start = 0
+    end = len(seq)-1
+    while start < end:
+        mid = (start+end) // 2
+        if seq[mid] == x:
+            return mid
+        elif seq[mid] > x:
+            end = mid - 1
+        else:
+            start = mid + 1
+    return None
+    
 
 def mcd(a, b):
     "Calcola il massimo comun divisore di due interi non negativi."
