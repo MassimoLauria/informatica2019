@@ -3,6 +3,24 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-12-12 gio> Lezione 23 - Dizionari / Codifica di dati
+
+  Vediamo un itpo  di dato particolarmente efficiente  per la gestione
+  di ricerche: il dizionario. Ne vediamo le caratteristiche principali
+  e come usarli con un esempio.
+
+  Successivamente introduciamo  il problema  della codifica  dei dati,
+  che avrà applicazione anche quando discuteremo l'uso dei file.
+
+  *Materiale didattico*: i paragrafi 11.1-11.3 del libro di testo.
+
+  Dizionari: ([[file:docs/dizionario-slides.pdf][schermo]]|[[file:docs/dizionario-print.pdf][stampa]])
+  
+  Codifica dei dati: ([[file:docs/codificadati-slides.pdf][schermo]]|[[file:docs/codificadati-print.pdf][stampa]])
+
+  *Lavoro  assegnato*:   leggere  i  paragrafi  14.1-14.4   del  libro
+  di testo.
+
 * <2019-12-11 mer> Lezione 22 - Equazioni di ricorrenza
 
   Vediamo  le equazioni  di  ricorrenza, un  metodo  per esprimere  la
