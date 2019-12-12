@@ -11,6 +11,8 @@ che viene prodotto e pubblicato.
   Alcuni degli algoritmi  spiegati nel corso sono  presenti nel modulo
   Python [[file:code/algoritmi.py][algoritmi.py]].
 
+  Tavola sinottica delle sintassi Python: [[file:docs/mementopython3-english.pdf][Memento Python]].
+
 * Diapositive 
 
   Le  diapositive, per  argomento,  utilizzate a  lezione. Sul  [[file:journal.org][diario]]
@@ -33,7 +35,23 @@ che viene prodotto e pubblicato.
   | Gestione degli errori   | [[file:docs/gestionerrori-slides.pdf][scarica]]                    | [[file:docs/gestionerrore-print.pdf][scarica]]                    |
   | Codifica dei dati       | [[file:docs/codificadati-slides.pdf][scarica]]                    | [[file:docs/codificadati-print.pdf][scarica]]                    |
   | Dizionari               | [[file:docs/dizionario-slides.pdf][scarica]]                    | [[file:docs/dizionario-print.pdf][scarica]]                    |
+  | Uso dei file (di testo) | [[file:docs/file-slides.pdf][scarica]]                    | [[file:docs/file-print.pdf][scarica]]                    |
   |-------------------------+----------------------------+----------------------------|
+
+  File di testo di esempio dal progetto [[https://www.gutenberg.org/wiki/Main_Page][Progetto Gutemberg]], in inglese
+  codificati UTF-8.
+
+  |-------------------------------------+------------------------+------------------|
+  | Titolo                              | Autore                 | File             |
+  |-------------------------------------+------------------------+------------------|
+  | /Alice's Adventures in Wonderland/  | Lewis Carroll          | [[file:docs/alice.txt][alice.txt]]        |
+  | /Frankenstein/                      | Mary W. Shelley        | [[file:docs/frankenstein.txt][frankenstein.txt]] |
+  | /The Adventures of Sherlock Holmes/ | A. C. Doyle            | [[file:docs/holmes.txt][holmes.txt]]       |
+  | /Moby Dick/                         | Herman Melville        | [[file:docs/mobydick.txt][mobydick.txt]]     |
+  | /The Prince/                        | Niccoló Machiavelli    | [[file:docs/prince.txt][prince.txt]]       |
+  | /Treasure Island/                   | Robert Louis Stevenson | [[file:docs/treasure.txt][treasure.txt]]     |
+  |-------------------------------------+------------------------+------------------|
+
 
 * Esercitazioni di laboratorio
 
@@ -47,7 +65,7 @@ che viene prodotto e pubblicato.
   | Laboratorio 2 | [[file:docs/lab02.pdf][scarica]] | Laboratorio 8  | [[file:docs/lab08.pdf][scarica]] |
   | Laboratorio 3 | [[file:docs/lab03.pdf][scarica]] | Laboratorio 9  | [[file:docs/lab09.pdf][scarica]] |
   | Laboratorio 4 | [[file:docs/lab04.pdf][scarica]] | Laboratorio 10 | [[file:docs/lab10.pdf][scarica]] |
-  | Laboratorio 5 | [[file:docs/lab05.pdf][scarica]] |                |         |
+  | Laboratorio 5 | [[file:docs/lab05.pdf][scarica]] | Laboratorio 11 | N/A     |
   | Laboratorio 6 | [[file:docs/lab06.pdf][scarica]] |                |         |
   |---------------+---------+----------------+---------|
   

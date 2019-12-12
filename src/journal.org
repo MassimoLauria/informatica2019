@@ -3,6 +3,43 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* COMMENT <2019-12-18 mer> Lezione 24 - Gestione dei file
+
+  Vediamo  come  accedere/scrivere/leggere/modificare  file  di  testo
+  con Python.
+
+  *Materiale didattico*:  i paragrafi 14.1-14.4 del libro di testo.
+
+  Gestione dei file: ([[file:docs/file-slides.pdf][schermo]]|[[file:docs/file-print.pdf][stampa]])
+
+  File di testo di esempio dal progetto [[https://www.gutenberg.org/wiki/Main_Page][Progetto Gutemberg]], in inglese
+  codificati UTF-8.
+
+  |-------------------------------------+------------------------+------------------|
+  | Titolo                              | Autore                 | File             |
+  |-------------------------------------+------------------------+------------------|
+  | /Alice's Adventures in Wonderland/  | Lewis Carroll          | [[file:docs/alice.txt][alice.txt]]        |
+  | /Frankenstein/                      | Mary W. Shelley        | [[file:docs/frankenstein.txt][frankenstein.txt]] |
+  | /The Adventures of Sherlock Holmes/ | A. C. Doyle            | [[file:docs/holmes.txt][holmes.txt]]       |
+  | /Moby Dick/                         | Herman Melville        | [[file:docs/mobydick.txt][mobydick.txt]]     |
+  | /The Prince/                        | Niccoló Machiavelli    | [[file:docs/prince.txt][prince.txt]]       |
+  | /Treasure Island/                   | Robert Louis Stevenson | [[file:docs/treasure.txt][treasure.txt]]     |
+  |-------------------------------------+------------------------+------------------|
+
+* <2019-12-16 lun> Simulazione di Esame di programmazione
+
+  Questa lezione  di laboratorio è  dedicata ad una  simulazione della
+  prova di programmazione che faremo all'esame.
+
+  Durante  la prova  di  programmazione (e  la  simulazione) non  sarà
+  consentito  usare   nessun  libro  di  testo,   e  neppure  dispense
+  o   cellulari.   Non   sarà  neppure   possibile   usare   internet.
+  Potrete  tenere con  voi soltanto  un  documento e  beni di  ristoro
+  (acqua, snack) in quantità personale e ragionevole.
+
+  Vi verrà  fornita una  copia digitale  del foglio  riassuntivo delle
+  sintassi python: [[file:docs/mementopython3-english.pdf][Memento Python]].
+ 
 * <2019-12-12 gio> Lezione 23 - Dizionari / Codifica di dati
 
   Vediamo un itpo  di dato particolarmente efficiente  per la gestione
