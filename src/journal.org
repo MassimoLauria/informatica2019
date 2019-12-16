@@ -3,7 +3,7 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
-* COMMENT <2019-12-18 mer> Lezione 24 - Gestione dei file
+* <2019-12-18 mer> Lezione 24 - Gestione dei file
 
   Vediamo  come  accedere/scrivere/leggere/modificare  file  di  testo
   con Python.
