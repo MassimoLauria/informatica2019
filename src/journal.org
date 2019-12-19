@@ -3,6 +3,16 @@
 Qui potete trovare  tutte le informazioni riguardo  il contenuto delle
 lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
+* <2019-12-19 gio> Conclusione del corso
+
+  Parte della lezione  verrà dedicata ad affrontare  alcune domande di
+  esempio simili a quelle delle prove di esame di teoria.
+  
+  Al termine ribadiremo il programma del corso e le modalità di esame.
+
+  Conclusione del corso: ([[file:docs/conclusione-slides.pdf][schermo]]|[[file:docs/conclusione-print.pdf][stampa]])
+
+
 * <2019-12-18 mer> Lezione 24 - Gestione dei file
 
   Vediamo  come  accedere/scrivere/leggere/modificare  file  di  testo

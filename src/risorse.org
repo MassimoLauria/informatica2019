@@ -36,6 +36,7 @@ che viene prodotto e pubblicato.
   | Codifica dei dati       | [[file:docs/codificadati-slides.pdf][scarica]]                    | [[file:docs/codificadati-print.pdf][scarica]]                    |
   | Dizionari               | [[file:docs/dizionario-slides.pdf][scarica]]                    | [[file:docs/dizionario-print.pdf][scarica]]                    |
   | Uso dei file (di testo) | [[file:docs/file-slides.pdf][scarica]]                    | [[file:docs/file-print.pdf][scarica]]                    |
+  | Conclusione del corso   | [[file:docs/conclusione-slides.pdf][scarica]]                    | [[file:docs/conclusione-print.pdf][scarica]]                    |
   |-------------------------+----------------------------+----------------------------|
 
   File di testo di esempio dal progetto [[https://www.gutenberg.org/wiki/Main_Page][Progetto Gutemberg]], in inglese
