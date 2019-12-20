@@ -66,7 +66,7 @@ che viene prodotto e pubblicato.
   | Laboratorio 2 | [[file:docs/lab02.pdf][scarica]] | Laboratorio 8  | [[file:docs/lab08.pdf][scarica]] |
   | Laboratorio 3 | [[file:docs/lab03.pdf][scarica]] | Laboratorio 9  | [[file:docs/lab09.pdf][scarica]] |
   | Laboratorio 4 | [[file:docs/lab04.pdf][scarica]] | Laboratorio 10 | [[file:docs/lab10.pdf][scarica]] |
-  | Laboratorio 5 | [[file:docs/lab05.pdf][scarica]] | Laboratorio 11 | N/A     |
+  | Laboratorio 5 | [[file:docs/lab05.pdf][scarica]] | Laboratorio 11 | [[file:docs/lab11.pdf][scarica]] |
   | Laboratorio 6 | [[file:docs/lab06.pdf][scarica]] |                |         |
   |---------------+---------+----------------+---------|
   

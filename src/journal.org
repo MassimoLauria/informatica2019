@@ -6,9 +6,12 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 * <2019-12-19 gio> Conclusione del corso
 
   Parte della lezione  verrà dedicata ad affrontare  alcune domande di
-  esempio simili a quelle delle prove di esame di teoria.
-  
-  Al termine ribadiremo il programma del corso e le modalità di esame.
+  esempio simili a  quelle delle prove di esame di  teoria. Al termine
+  ribadiremo il programma del corso e le modalità di esame.
+
+  *Materiale didattico*
+
+  Esempi di domande di esame: ([[file:docs/esempio_prova_teoria.pdf][scarica]])
 
   Conclusione del corso: ([[file:docs/conclusione-slides.pdf][schermo]]|[[file:docs/conclusione-print.pdf][stampa]])
 
@@ -49,6 +52,20 @@ lezioni,  ed il  relativo  materiale. Tenete  d'occhio questa  pagina.
 
   Vi verrà  fornita una  copia digitale  del foglio  riassuntivo delle
   sintassi python: [[file:docs/mementopython3-english.pdf][Memento Python]].
+
+  Il testo della prova è il seguente: [[file:docs/lab11.pdf][scarica]].
+
+   |---+--------------------------+------------------------------+------------------------------------|
+   |   | Esercizio                | test pubblici                | test segreti                       |
+   |---+--------------------------+------------------------------+------------------------------------|
+   | 1 | Inversione di stringa    | [[file:code/test_lab11inversione.py][test_lab11inversione.py]]      | [[file:code/test_lab11inversioneSECRET.py][test_lab11inversioneSECRET.py]]      |
+   | 2 | Numeri in intervallo     | [[file:code/test_lab11compresi.py][test_lab11icompresi.py]]       | [[file:code/test_lab11compresiSECRET.py][test_lab11compresiSECRET.py]]        |
+   | 3 | Verifica di ordinamento  | [[file:code/test_lab11ordinata.py][test_lab11ordinata.py]]        | [[file:code/test_lab11ordinataSECRET.py][test_lab11ordinataSECRET.py]]        |
+   | 4 | Bordo della matrice      | [[file:code/test_lab11bordo.py][test_lab11bordo.py]]           | [[file:code/test_lab11bordoSECRET.py][test_lab11bordoSECRET.py]]           |
+   | 5 | Coppia a distanza minima | [[file:code/test_lab11distanzaminima.py][test_lab11distanzaminima.py]]  | [[file:code/test_lab11distanzaminimaSECRET.py][test_lab11distanzaminimaSECRET.py]]  |
+   | 6 | Coppie di righe uguali   | [[file:code/test_lab11righeuguali.py][test_lab11righeuguali.py]]     | [[file:code/test_lab11righeugualiSECRET.py][test_lab11righeugualiSECRET.py]]     |
+   | 7 | Frequenza di parole      | [[file:code/test_lab11frequenzaparole.py][test_lab11frequenzaparole.py]] | [[file:code/test_lab11frequenzaparoleSECRET.py][test_lab11frequenzaparoleSECRET.py]] |
+   |---+--------------------------+------------------------------+------------------------------------|
  
 * <2019-12-12 gio> Lezione 23 - Dizionari / Codifica di dati
 

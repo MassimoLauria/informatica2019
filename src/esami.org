@@ -21,6 +21,9 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
 
   Un eventuale colloquio orale è a discrezione del docente.
 
+  Esempio di prova scritta: ([[file:docs/esempio_prova_teoria.pdf][scarica]])
+
+  Esempio di prova di programmazione: ([[file:docs/esempio_prova_programmazione.zip][scarica]])
 
   #+BEGIN_CENTER
   |---------+-----------+---------------+------------+------------------------|
