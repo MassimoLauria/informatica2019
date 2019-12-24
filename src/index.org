@@ -39,6 +39,10 @@
 
 * Avvisi
 
+  <2019-12-24 Tue>  Sono usciti  i risultati  della prova  simulata di
+  programmazione. Considerando  i problemi  tecnici, leggeteli  con la
+  dovuta prospettiva.
+
   <2019-12-04    mer>   Questionari    per   le    rilevazioni   delle
   opinioni studenti. A lezione, durante  la pausa, vi sarà proposto di
   compilare il questionario OPIS per il corso.
