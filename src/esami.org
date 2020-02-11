@@ -30,7 +30,7 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   | Appello | Data      | Aula          |     Orario | Risultati              |
   |---------+-----------+---------------+------------+------------------------|
   | I       | 17/1/2020 | Aula 15 RM025 | 9:00-14:00 | ([[file:docs/risultati-2020.01.17.pdf][vedi qui]])             |
-  | II      | 10/2/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | II      | 10/2/2020 | Aula 15 RM025 | 9:00-14:00 | ([[file:docs/risultati-2020.02.10.pdf][vedi qui]])             |
   | III     | 3/6/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   | IV      | 6/7/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   | V       | 18/9/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
