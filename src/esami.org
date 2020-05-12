@@ -5,6 +5,25 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
 
 * Modalità e date degli appelli 
 
+  *Modalità di esame telematiche*:  a causa dell'impossibilita di fare
+  esami in sicurezza  negli edifici della sapienza,  gli esami saranno
+  svolti sulla piattaforma [[https://exam.net][Exam.net]], con una simultanea teleconferenza
+  di su  Google Meet per  la verifica dell'identità,  dell'ambiente di
+  lavoro e per comunicare col docente.
+  
+  1. Poco  prima dell'esame verranno inviati  sull'email istituzionale
+     *dei soli prenotati all'appello* gli  inviti per la conferenza in
+     Google Meet.
+  2.   Contestualmente  (su  Meet o  sull'email  istituzionale)  verrà
+     comunicata una  chiave di  accesso per  l'esame da  utilizzare su
+     [[https://exam.net][Exam.net]].
+  3. La  piattaforma [[https://exam.net][Exam.net]]  vi chiude  fuori dall'esame  se passate
+     a qualche  altra applicazione. E  solo il docente  può ammettervi
+     nuovamente all'esame.
+  4.  L'esame sarà  più o  meno  come al  solito (vedi  sotto), ma  la
+     consegna avverrà tramite la piattaforma online.
+
+
   L'esame sarà costituito da due prove, 
 
   - prova scritta 
