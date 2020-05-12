@@ -10,7 +10,9 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   svolti sulla piattaforma [[https://exam.net][Exam.net]], con una simultanea teleconferenza
   di su  Google Meet per  la verifica dell'identità,  dell'ambiente di
   lavoro e per comunicare col docente.
-  
+
+  [[https://www.uniroma1.it/it/documento/procedura-straordinaria-conseguente-allemergenza-sanitaria-covid-19-lo-svolgimento-degli][Guida per gli studenti alla piattaforma Exam.net]]
+
   1. Poco  prima dell'esame verranno inviati  sull'email istituzionale
      *dei soli prenotati all'appello* gli  inviti per la conferenza in
      Google Meet.
