@@ -5,26 +5,37 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
 
 * Modalità e date degli appelli 
 
+#+begin_export html
+<hr />
+#+end_export
+
   *Modalità di esame telematiche*:  a causa dell'impossibilita di fare
   esami in sicurezza  negli edifici della sapienza,  gli esami saranno
   svolti sulla piattaforma [[https://exam.net][Exam.net]], con una simultanea teleconferenza
   di su  Google Meet per  la verifica dell'identità,  dell'ambiente di
-  lavoro e per comunicare col docente.
+  lavoro e per  comunicare col docente. Per  effettuare l'esame dovete
+  installare il browser web sicuro [[https://support.exam.net/#/seb][SEB]].
 
   [[https://www.uniroma1.it/it/documento/procedura-straordinaria-conseguente-allemergenza-sanitaria-covid-19-lo-svolgimento-degli][Guida per gli studenti alla piattaforma Exam.net]]
 
-  1. Poco  prima dell'esame verranno inviati  sull'email istituzionale
+  1. Installare fin da subito il browser web [[https://support.exam.net/#/seb][SEB]].
+  2. Poco  prima dell'esame verranno inviati  sull'email istituzionale
      *dei soli prenotati all'appello* gli  inviti per la conferenza in
      Google Meet.
-  2.   Contestualmente  (su  Meet o  sull'email  istituzionale)  verrà
-     comunicata una  chiave di  accesso per  l'esame da  utilizzare su
-     [[https://exam.net][Exam.net]].
-  3. La  piattaforma [[https://exam.net][Exam.net]]  vi chiude  fuori dall'esame  se passate
+  3. Contestualmente  (su  Meet o  sull'email  istituzionale)  verrà
+   comunicata una  chiave di  accesso per  l'esame da  utilizzare su
+   [[https://exam.net][Exam.net]].
+  4. La  piattaforma [[https://exam.net][Exam.net]]  vi chiude  fuori dall'esame  se passate
      a qualche  altra applicazione. E  solo il docente  può ammettervi
      nuovamente all'esame.
-  4.  L'esame sarà  più o  meno  come al  solito (vedi  sotto), ma  la
-     consegna avverrà tramite la piattaforma online.
+  5. L'esame sarà  più o  meno  come al  solito (vedi  sotto), ma  la
+    consegna avverrà tramite la piattaforma online.
 
+  *Attenzione: prova tecnica di esame il 25 Maggio 2020 alle 15:00*
+
+#+begin_export html
+<hr />
+#+end_export
 
   L'esame sarà costituito da due prove, 
 

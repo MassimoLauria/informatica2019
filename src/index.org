@@ -39,6 +39,15 @@
 
 * Avvisi
 
+  <2020-05-25 Mon> A  causa delle disposizioni legate  al COVID-19 gli
+  esami della  sessione di giugno  e luglio avranno luogo  in modalità
+  telematica. Il  25 Maggio  2020 alle  ore 15:00  ci sarà  una *prova
+  tecnica*  alla   quale  potranno  partecipare  tutti   gli  studenti
+  prenotati  ad uno  di  questi appelli.  Potere  leggere le  modalità
+  dell'esame alla  pagina [[file:esami.org][Esame]]. Ci sono  operazioni di autenticazione
+  da   fare   *prima*   dell'esame,    e   software   da   installare.
+  *Fatelo per tempo*.
+
   <2019-12-24 Tue>  Sono usciti  i risultati  della prova  simulata di
   programmazione. Considerando  i problemi  tecnici, leggeteli  con la
   dovuta prospettiva.
