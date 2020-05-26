@@ -122,6 +122,8 @@
    - Dispense sulla parte teorica di algoritmi e complessità
    - Il contenuto delle diapositive utilizzate a lezione
    - Il contenuto delle esercitazioni di laboratorio
+
+   Il programma dettagliato è sulle slide [[file:docs/conclusione-slides.pdf][Conclusione del corso]].
      
    Le modalità di esame sono discusse nella [[file:esami.org][pagina dedicata]].
        

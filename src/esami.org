@@ -13,25 +13,22 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   esami in sicurezza  negli edifici della sapienza,  gli esami saranno
   svolti sulla piattaforma [[https://exam.net][Exam.net]], con una simultanea teleconferenza
   su  Google  Meet per  la  verifica  dell'identità, dell'ambiente  di
-  lavoro e per  comunicare col docente. Per  effettuare l'esame dovete
-  installare il browser web sicuro  [[https://support.exam.net/#/seb][SEB]]. Per la teleconferenza dovrete
+  lavoro e per  comunicare col docente. Per la teleconferenza dovrete
   installare  e usare  Google  Meet su  *un  secondo dispositivo*,  ad
-  esempio uno smartphone o un secondo computer.
+  esempio uno smartphone o un secondo computer. *NON VERRÀ USATO SEB*.
 
   [[https://www.uniroma1.it/it/documento/procedura-straordinaria-conseguente-allemergenza-sanitaria-covid-19-lo-svolgimento-degli][Guida per gli studenti alla piattaforma Exam.net]]
 
-  1. Installare fin da subito il browser web [[https://support.exam.net/#/seb][SEB]].
-  2. Installare Google Meet sul secondi dispositivo.
-  3. Poco  prima dell'esame verranno inviati  sull'email istituzionale
+  1. Installare Google Meet sul secondi dispositivo.
+  2. Poco  prima dell'esame verranno inviati  sull'email istituzionale
      *dei soli prenotati all'appello* gli  inviti per la conferenza in
      Google Meet.
-  4. Contestualmente  (sull'email  istituzionale)  verrà
+  3. Contestualmente  (sull'email  istituzionale)  verrà
    comunicata una  chiave di  accesso per  l'esame da  utilizzare su
    [[https://exam.net][Exam.net]], e l'invito alla teleconferenza Google Meet. 
-  5. La  piattaforma [[https://exam.net][Exam.net]]  vi chiude  fuori dall'esame  se passate
-     a qualche  altra applicazione. E  solo il docente  può ammettervi
-     nuovamente all'esame.
-  6. L'esame sarà  più o  meno  come al  solito (vedi  sotto), ma  la
+  4. La piattaforma [[https://exam.net][Exam.net]] ci segnala  se se passate a qualche altra
+     applicazione.
+  5. L'esame sarà  più o  meno  come al  solito (vedi  sotto), ma  la
     consegna avverrà tramite la piattaforma.
 
   *Attenzione: prova tecnica di esame il 25 Maggio 2020 alle 15:00*
