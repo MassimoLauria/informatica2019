@@ -19,6 +19,8 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
 
   [[https://www.uniroma1.it/it/documento/procedura-straordinaria-conseguente-allemergenza-sanitaria-covid-19-lo-svolgimento-degli][Guida per gli studenti alla piattaforma Exam.net]]
 
+  [[file:docs/examnet-istruzioni-appello3.pdf][Istruzioni per la prova di programmazione]]
+
   1. Installare Google Meet sul secondi dispositivo.
   2. Poco  prima dell'esame verranno inviati  sull'email istituzionale
      *dei soli prenotati all'appello* gli  inviti per la conferenza in
@@ -63,7 +65,7 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   |---------+-----------+---------------+------------+------------------------|
   | I       | 17/1/2020 | Aula 15 RM025 | 9:00-14:00 | ([[file:docs/risultati-2020.01.17.pdf][vedi qui]])             |
   | II      | 10/2/2020 | Aula 15 RM025 | 9:00-14:00 | ([[file:docs/risultati-2020.02.10.pdf][vedi qui]])             |
-  | III     | 3/6/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | III     | 3/6/2020  | Exam.net      | 9:00-14:00 | non ancora disponibili |
   | IV      | 6/7/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   | V       | 18/9/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   |---------+-----------+---------------+------------+------------------------|
