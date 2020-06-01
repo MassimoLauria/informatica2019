@@ -41,8 +41,8 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
 
   L'esame sarà costituito da due prove, 
 
-  - prova scritta 
-  - prova pratica di programmazione
+  - prova di teoria 
+  - prova di programmazione
 
   e per  completare l'esame  sarà necessario  ottenere in  entrambe un
   voto non  inferiore a 18. Il  voto finale dell'esame sarà  una media
@@ -55,7 +55,7 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
 
   Un eventuale colloquio orale è a discrezione del docente.
 
-  Esempio di prova scritta: ([[file:docs/esempio_prova_teoria.pdf][scarica]])
+  Esempio di prova di teoria: ([[file:docs/esempio_prova_teoria.pdf][scarica]])
 
   Esempio di prova di programmazione: ([[file:docs/esempio_prova_programmazione.zip][scarica]])
 
@@ -75,7 +75,7 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   che va ancora  finalizzato, a seconda del numero di  studenti che si
   presenteranno. Ad esempio:
 
-  - prova scritta: dalle ore 9.00 alle 11.00
+  - prova di teoria: dalle ore 9.00 alle 11.00
   - prova di programmazione: dalle ore 11.30 alle ore 13.30
 
   È  anche  possibile  svolgere  le   due  prove  in  appelli  diversi
