@@ -33,7 +33,7 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   5. L'esame sarà  più o  meno  come al  solito (vedi  sotto), ma  la
     consegna avverrà tramite la piattaforma.
 
-  *Attenzione: prova tecnica di esame il 25 Maggio 2020 alle 15:00*
+  *Per fare la prova tecnica entrare su [[https://exam.net][Exam.net]] col codice SMi6oY*
 
 #+begin_export html
 <hr />
@@ -66,7 +66,7 @@ per esigenze organizzative, e di sincronizzazione tra i tre canali./
   | I       | 17/1/2020 | Aula 15 RM025 | 9:00-14:00 | ([[file:docs/risultati-2020.01.17.pdf][vedi qui]])             |
   | II      | 10/2/2020 | Aula 15 RM025 | 9:00-14:00 | ([[file:docs/risultati-2020.02.10.pdf][vedi qui]])             |
   | III     | 3/6/2020  | Exam.net      | 9:00-14:00 | ([[file:docs/risultati-2020.06.03.pdf][vedi qui]])             |
-  | IV      | 6/7/2020  | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
+  | IV      | 6/7/2020  | Exam.net      | 9:00-14:00 | non ancora disponibili |
   | V       | 18/9/2020 | Aula 15 RM025 | 9:00-14:00 | non ancora disponibili |
   |---------+-----------+---------------+------------+------------------------|
   #+END_CENTER
